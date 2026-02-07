@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Sankey</title>
+
+  <!-- Apache ECharts -->
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #chart {
+      width: 100%;
+      height: 100%;
+    }
+    button, select {
+      background: #f1f1f1;
+      border: 1px solid #d5d5d5;
+      border-radius: 0.25rem;
+      padding: 0.5em 1em;
+      font-size: 14px;
+    }
+    .buttons {
+      display: flex;
+      column-gap : 0.5rem;
+      justify-content: center;
+    }
+    .title-text {
+      font-size: 24px;
+      
+    }
+  </style>
+</head>
+<body>
+<p class="title-text">Taxonomy Sankey</p>
+
+<div class="buttons">
+  <button onClick="set1reads()" >Set 1</button>
+  <button onClick="set05reads()" >Set 0.5</button>
+  <button onClick="set01reads()" >Set 0.1</button>
+
+  <select id="depthSelect" onchange="onDepthChange()">
+    <option value="2" selected>Up to Class</option>
+    <option value="3">Up to Order</option>
+    <option value="4">Up to Family</option>
+    <option value="5">Up to Genus</option>
+    <option value="6" selected>Up to Species</option>
+  </select>
+</div>
+<div id="chart"></div>
+
+<script id="data_1" type="application/json">
+ {{DATA_1}}
+</script>
+
+<script id="data_0_5" type="application/json">
+ {{DATA_0.5}}
+</script>
+
+<script id="data_0_1" type="application/json">
+ {{DATA_0.1}}
+</script>
+
+<script>
+  let chart = echarts.init(document.getElementById('chart'));
+  const data_1 = JSON.parse(
+    document.getElementById("data_1").textContent
+  );
+  const data_0_5 = JSON.parse(
+    document.getElementById("data_0_5").textContent
+  );
+  const data_0_1 = JSON.parse(
+    document.getElementById("data_0_1").textContent
+  );
+
+  const ranks = ["Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species"]
+  
+
+  const highlightPath = {{PATH}};
+  
+
+  const highlightNodes = new Set(highlightPath);
+  const highlightEdges = new Set(
+    highlightPath.map((node, i) =>
+      i < highlightPath.length - 1
+        ? `${highlightPath[i]}→${highlightPath[i + 1]}`
+        : null
+    ).filter(Boolean)
+  );  
+  let currentDepth = 2
+  let currentData = data_1
+
+  
+  function filterByDepth(data, maxDepth) {
+    const allowedRanks = new Set(ranks.slice(0, maxDepth + 1));
+
+    // keep nodes up to depth
+    const nodes = data.nodes.filter(n => allowedRanks.has(n.rank));
+
+    // names of kept nodes
+    const names = new Set(nodes.map(n => n.name));
+
+    // keep only edges whose endpoints both exist
+    const links = data.links.filter(l =>
+      names.has(l.source) && names.has(l.target)
+    );
+
+  return { nodes, links };
+}
+
+  function makeSankeyOptions(data) {
+    console.log(currentDepth)
+    filteredData = filterByDepth(data=data, maxDepth=currentDepth)
+
+    
+    const HIGHLIGHT_COLOR = "#DD85E7"
+    const styledNodes = filteredData.nodes.map(n => {
+      if (highlightNodes.has(n.name)) {
+        return {
+          ...n,
+          itemStyle: {
+            color: HIGHLIGHT_COLOR,
+            opacity: 1
+          }
+        };
+      }
+      return n; // keep level-based theme
+    });
+
+    const styledLinks = filteredData.links.map(l => {
+      const key = `${l.source}→${l.target}`;
+      if (highlightEdges.has(key)) {
+        return {
+          ...l,
+          lineStyle: {
+            color: HIGHLIGHT_COLOR,
+            opacity: 0.65
+          }
+        };
+      }
+      return {
+        ...l,
+        lineStyle: {
+        }
+      };
+    });
+
+    return{
+        tooltip: {
+          trigger: 'item',
+          triggerOn: 'mousemove',
+          formatter: function (params) {
+            return `
+              <b>${params.name}</b><br/>
+              Relative abundance: ${params.data.percent} %<br/>
+              Rank: ${params.data.rank}
+            `;
+          }
+        },
+        series: [{
+          label: {
+            show: true,
+            silent: true,   // keeps tooltip hover working
+            fontSize: 16,
+            lineHeight: 15,
+            formatter: function (params) {
+              const reads =
+                typeof params.value === 'number'
+                  ? params.value.toLocaleString()
+                  : 'NA';
+
+              return `${params.name}\n${reads}`;
+            }
+          },
+          type: 'sankey',
+          nodeGap: 25,
+          nodeAlign: 'left',
+          emphasis: {
+            focus: 'adjacency'
+          },
+          lineStyle: {
+            curveness: 0.30,
+            color: 'source'
+          },
+          data: styledNodes,
+          links: styledLinks,
+            levels: [
+                        {
+                        depth: 0,
+                        itemStyle: {
+                            color: '#aba4fe'
+                        },
+                        lineStyle: {
+                            color: '#aba4fe',
+                            opacity: 0.6
+                        }
+                        },
+                        {
+                        depth: 1,
+                        itemStyle: {
+                            color: '#b3cde3'
+                        },
+                        lineStyle: {
+                            color: '#b3cde3',
+                            opacity: 0.6
+                        }
+                        },
+                        {
+                        depth: 2,
+                        itemStyle: {
+                            color: '#abf4d3'
+                        },
+                        lineStyle: {
+                            color: '#abf4d3',
+                            opacity: 0.6
+                        }
+                        },
+                        {
+                        depth: 3,
+                        itemStyle: {
+                            color: '#abf4a3'
+                        },
+                        lineStyle: {
+                            color: '#abf4a3',
+                            opacity: 0.6
+                        }
+                        }
+                    ],
+        }]
+      };
+  }
+
+  chart.setOption(makeSankeyOptions(data_0_5));
+
+  function rerenderChart(data) {
+    const dom = document.getElementById("chart");
+
+    if (chart) {
+      chart.dispose();
+    }
+
+    chart = echarts.init(dom);
+    chart.setOption(makeSankeyOptions(data));
+  }
+  
+
+  function set1reads() {
+    currentData = data_1
+    rerenderChart(data_1)
+  }
+  function set05reads() {
+    currentData = data_0_5
+    rerenderChart(data_0_5)
+    console.log("0.5")
+  }
+  function set01reads() {
+    currentData = data_0_1
+    rerenderChart(data_0_1)
+    console.log("0.1")
+  }
+  
+  function onDepthChange() {
+    currentDepth = Number(
+      document.getElementById("depthSelect").value
+    );
+    rerenderChart(currentData);
+  }
+</script>
+
+</body>
+</html>
