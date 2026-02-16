@@ -67,6 +67,13 @@ def main() -> None:
         metavar="FILE",
         help="File containing taxa to highlight (one per line)",
     )
+    metaphlan.add_argument(
+        "-c",
+        "--consensus",
+        action="store_true",
+        default=False,
+        help="Consensus plot for multi-sample files",
+    )
 
     args = parser.parse_args()
 
@@ -75,9 +82,9 @@ def main() -> None:
         #     nodes, edges = kraken_to_sankey(args.input)
         #
         if args.command == "metaphlan":
-            data_1 = mpa_to_sankey(args.input, min_percent=4.9)
-            data_0_5 = mpa_to_sankey(args.input, min_percent=0.9)
-            data_0_1 = mpa_to_sankey(args.input, min_percent=0.49)
+            data_1 = mpa_to_sankey(args.input, min_percent=4.9, consensus=args.consensus)
+            data_0_5 = mpa_to_sankey(args.input, min_percent=0.9, consensus=args.consensus)
+            data_0_1 = mpa_to_sankey(args.input, min_percent=0.49, consensus=args.consensus)
 
         else:
             parser.error("Unknown command")

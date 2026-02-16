@@ -16,6 +16,7 @@ packages = [{include = "taxa_viz", from = "src"}]
 
 [tool.poetry.dependencies]
 pandas = "2.3.2"
+scikit-bio = ">=0.6.0"
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"

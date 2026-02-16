@@ -1,5 +1,7 @@
 import pandas as pd
 import json
+
+from taxa_viz.consensus import mpa_consensus
 # from taxa_viz.errors import ValidationError
 
 RANK_MAP = {
@@ -18,13 +20,17 @@ def get_rank(taxon):
     return RANK_MAP.get(prefix, "Unknown")
 
 
-def validate_dataframe(filepath):
+def validate_dataframe(filepath, consensus):
     data = pd.read_csv(filepath, delimiter="\t")
     if len(data.columns) < 3:
         data.columns = ['classification', 'reads_count']
         data = add_relative_abundance(data)
 
         return data
+
+    elif consensus:
+        df = mpa_consensus(data)
+        return df
     else:
         try:
             data.columns = [
@@ -46,14 +52,14 @@ def add_relative_abundance(dataframe):
     return dataframe
 
 
-def mpa_to_sankey(filepath, max_depth=None, min_percent=0.0):
+def mpa_to_sankey(filepath, max_depth=None, min_percent=0.0, consensus=False):
     """
     Build Sankey nodes and edges with:
       - percent driving flow width
       - count stored for tooltips
 
     """
-    df = validate_dataframe(filepath)
+    df = validate_dataframe(filepath, consensus)
     rows = list(df.itertuples(index=False, name=None))
     nodes = []
     edges = []
