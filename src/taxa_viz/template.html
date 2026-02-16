@@ -44,16 +44,16 @@
 <p class="title-text">Taxonomy Sankey</p>
 
 <div class="buttons">
-  <button onClick="set1reads()" >Set 1</button>
-  <button onClick="set05reads()" >Set 0.5</button>
-  <button onClick="set01reads()" >Set 0.1</button>
+  <button onClick="set1reads()" >5% reads</button>
+  <button onClick="set05reads()" >1% reads</button>
+  <button onClick="set01reads()" >0.5% reads</button>
 
   <select id="depthSelect" onchange="onDepthChange()">
     <option value="2" selected>Up to Class</option>
     <option value="3">Up to Order</option>
     <option value="4">Up to Family</option>
     <option value="5">Up to Genus</option>
-    <option value="6" selected>Up to Species</option>
+    <option value="6">Up to Species</option>
   </select>
 </div>
 <div id="chart"></div>
@@ -122,7 +122,7 @@
     filteredData = filterByDepth(data=data, maxDepth=currentDepth)
 
     
-    const HIGHLIGHT_COLOR = "#DD85E7"
+    const HIGHLIGHT_COLOR = "{{HIGH_COLOR}}"
     const styledNodes = filteredData.nodes.map(n => {
       if (highlightNodes.has(n.name)) {
         return {

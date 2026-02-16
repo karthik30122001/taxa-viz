@@ -6,7 +6,7 @@ def load_template():
     return files("taxa_viz").joinpath("template.html")
 
 
-def render_html(data_1, data_0_5, data_0_1, output, list=[]):
+def render_html(data_1, data_0_5, data_0_1, output, color, list=[]):
     data_1 = json.dumps(data_1, indent=2)
     data_0_5 = json.dumps(data_0_5, indent=2)
     data_0_1 = json.dumps(data_0_1, indent=2)
@@ -18,6 +18,7 @@ def render_html(data_1, data_0_5, data_0_1, output, list=[]):
     html = html.replace("{{DATA_0.5}}", data_0_5)
     html = html.replace("{{DATA_0.1}}", data_0_1)
     html = html.replace("{{PATH}}", str(list))
+    html = html.replace("{{HIGH_COLOR}}", color)
 
     with open(output, "w") as f:
         f.write(html)

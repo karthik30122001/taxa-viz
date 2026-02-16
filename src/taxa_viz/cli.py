@@ -75,6 +75,10 @@ def main() -> None:
         help="Consensus plot for multi-sample files",
     )
 
+    metaphlan.add_argument(
+        "--highlight-color",
+        help="Custom color to highlight taxa with",
+    )
     args = parser.parse_args()
 
     try:
@@ -91,7 +95,10 @@ def main() -> None:
 
         # Render HTML (centralised here or in a helper)
         list = load_highlights(args)
-        render_html(data_1, data_0_5, data_0_1, args.output, list)
+        if args.highlight_color:
+            render_html(data_1, data_0_5, data_0_1, args.output, color=args.highlight_color, list=list)
+        else:
+            render_html(data_1, data_0_5, data_0_1, args.output, color="#FF637E", list=list)
 
     # except FileFormatError as e:
     #     print(f"File format error: {e}", file=sys.stderr)

@@ -44,16 +44,16 @@
 <p class="title-text">Taxonomy Sankey</p>
 
 <div class="buttons">
-  <button onClick="set1reads()" >Set 1</button>
-  <button onClick="set05reads()" >Set 0.5</button>
-  <button onClick="set01reads()" >Set 0.1</button>
+  <button onClick="set1reads()" >5% reads</button>
+  <button onClick="set05reads()" >1% reads</button>
+  <button onClick="set01reads()" >0.5% reads</button>
 
   <select id="depthSelect" onchange="onDepthChange()">
     <option value="2" selected>Up to Class</option>
     <option value="3">Up to Order</option>
     <option value="4">Up to Family</option>
     <option value="5">Up to Genus</option>
-    <option value="6" selected>Up to Species</option>
+    <option value="6">Up to Species</option>
   </select>
 </div>
 <div id="chart"></div>
@@ -62,162 +62,162 @@
  {
   "nodes": [
     {
-      "name": "Bacillati",
-      "rank": "Kingdom",
-      "percent": 50.016,
-      "value": 50.016
-    },
-    {
-      "name": "Actinomycetota",
-      "rank": "Phylum",
-      "percent": 47.76,
-      "value": 47.76
-    },
-    {
-      "name": "Actinomycetes",
-      "rank": "Class",
-      "percent": 43.595,
-      "value": 43.595
-    },
-    {
-      "name": "Micrococcales",
-      "rank": "Order",
-      "percent": 6.5,
-      "value": 6.5
-    },
-    {
-      "name": "Kitasatosporales",
-      "rank": "Order",
-      "percent": 12.122,
-      "value": 12.122
-    },
-    {
-      "name": "Streptomycetaceae",
-      "rank": "Family",
-      "percent": 12.096,
-      "value": 12.096
-    },
-    {
-      "name": "Streptomyces",
-      "rank": "Genus",
-      "percent": 10.972,
-      "value": 10.972
-    },
-    {
       "name": "Pseudomonadati",
       "rank": "Kingdom",
-      "percent": 44.837,
-      "value": 44.837
+      "percent": 50.142493532818854,
+      "value": 50.142493532818854
     },
     {
       "name": "Pseudomonadota",
       "rank": "Phylum",
-      "percent": 34.937,
-      "value": 34.937
-    },
-    {
-      "name": "Gammaproteobacteria",
-      "rank": "Class",
-      "percent": 5.738,
-      "value": 5.738
-    },
-    {
-      "name": "Betaproteobacteria",
-      "rank": "Class",
-      "percent": 7.417,
-      "value": 7.417
-    },
-    {
-      "name": "Burkholderiales",
-      "rank": "Order",
-      "percent": 6.286,
-      "value": 6.286
+      "percent": 38.128624930022404,
+      "value": 38.128624930022404
     },
     {
       "name": "Alphaproteobacteria",
       "rank": "Class",
-      "percent": 20.127,
-      "value": 20.127
+      "percent": 20.972683338292438,
+      "value": 20.972683338292438
     },
     {
       "name": "Hyphomicrobiales",
       "rank": "Order",
-      "percent": 12.201,
-      "value": 12.201
+      "percent": 12.796809775188391,
+      "value": 12.796809775188391
+    },
+    {
+      "name": "Betaproteobacteria",
+      "rank": "Class",
+      "percent": 8.104480586096487,
+      "value": 8.104480586096487
+    },
+    {
+      "name": "Burkholderiales",
+      "rank": "Order",
+      "percent": 6.691724449999442,
+      "value": 6.691724449999442
+    },
+    {
+      "name": "Gammaproteobacteria",
+      "rank": "Class",
+      "percent": 7.0164385932068445,
+      "value": 7.0164385932068445
+    },
+    {
+      "name": "Bacillati",
+      "rank": "Kingdom",
+      "percent": 43.661258080396536,
+      "value": 43.661258080396536
+    },
+    {
+      "name": "Actinomycetota",
+      "rank": "Phylum",
+      "percent": 40.652002798802464,
+      "value": 40.652002798802464
+    },
+    {
+      "name": "Actinomycetes",
+      "rank": "Class",
+      "percent": 37.42087519553783,
+      "value": 37.42087519553783
+    },
+    {
+      "name": "Kitasatosporales",
+      "rank": "Order",
+      "percent": 11.83144601075688,
+      "value": 11.83144601075688
+    },
+    {
+      "name": "Streptomycetaceae",
+      "rank": "Family",
+      "percent": 11.806840425150272,
+      "value": 11.806840425150272
+    },
+    {
+      "name": "Streptomyces",
+      "rank": "Genus",
+      "percent": 10.768799442168884,
+      "value": 10.768799442168884
+    },
+    {
+      "name": "Micrococcales",
+      "rank": "Order",
+      "percent": 5.915843591438751,
+      "value": 5.915843591438751
     }
   ],
   "links": [
     {
-      "source": "Bacillati",
-      "target": "Actinomycetota",
-      "rel": 3068556,
-      "value": 47.76
-    },
-    {
-      "source": "Actinomycetota",
-      "target": "Actinomycetes",
-      "rel": 2800933,
-      "value": 43.595
-    },
-    {
-      "source": "Actinomycetes",
-      "target": "Micrococcales",
-      "rel": 417593,
-      "value": 6.5
-    },
-    {
-      "source": "Actinomycetes",
-      "target": "Kitasatosporales",
-      "rel": 778849,
-      "value": 12.122
-    },
-    {
-      "source": "Kitasatosporales",
-      "target": "Streptomycetaceae",
-      "rel": 777160,
-      "value": 12.096
-    },
-    {
-      "source": "Streptomycetaceae",
-      "target": "Streptomyces",
-      "rel": 704918,
-      "value": 10.972
-    },
-    {
       "source": "Pseudomonadati",
       "target": "Pseudomonadota",
-      "rel": 2244643,
-      "value": 34.937
-    },
-    {
-      "source": "Pseudomonadota",
-      "target": "Gammaproteobacteria",
-      "rel": 368637,
-      "value": 5.738
-    },
-    {
-      "source": "Pseudomonadota",
-      "target": "Betaproteobacteria",
-      "rel": 476523,
-      "value": 7.417
-    },
-    {
-      "source": "Betaproteobacteria",
-      "target": "Burkholderiales",
-      "rel": 403845,
-      "value": 6.286
+      "rel": 6323886,
+      "value": 38.128624930022404
     },
     {
       "source": "Pseudomonadota",
       "target": "Alphaproteobacteria",
-      "rel": 1293158,
-      "value": 20.127
+      "rel": 3478459,
+      "value": 20.972683338292438
     },
     {
       "source": "Alphaproteobacteria",
       "target": "Hyphomicrobiales",
-      "rel": 783899,
-      "value": 12.201
+      "rel": 2122436,
+      "value": 12.796809775188391
+    },
+    {
+      "source": "Pseudomonadota",
+      "target": "Betaproteobacteria",
+      "rel": 1344182,
+      "value": 8.104480586096487
+    },
+    {
+      "source": "Betaproteobacteria",
+      "target": "Burkholderiales",
+      "rel": 1109867,
+      "value": 6.691724449999442
+    },
+    {
+      "source": "Pseudomonadota",
+      "target": "Gammaproteobacteria",
+      "rel": 1163723,
+      "value": 7.0164385932068445
+    },
+    {
+      "source": "Bacillati",
+      "target": "Actinomycetota",
+      "rel": 6742405,
+      "value": 40.652002798802464
+    },
+    {
+      "source": "Actinomycetota",
+      "target": "Actinomycetes",
+      "rel": 6206501,
+      "value": 37.42087519553783
+    },
+    {
+      "source": "Actinomycetes",
+      "target": "Kitasatosporales",
+      "rel": 1962324,
+      "value": 11.83144601075688
+    },
+    {
+      "source": "Kitasatosporales",
+      "target": "Streptomycetaceae",
+      "rel": 1958243,
+      "value": 11.806840425150272
+    },
+    {
+      "source": "Streptomycetaceae",
+      "target": "Streptomyces",
+      "rel": 1786077,
+      "value": 10.768799442168884
+    },
+    {
+      "source": "Actinomycetes",
+      "target": "Micrococcales",
+      "rel": 981182,
+      "value": 5.915843591438751
     }
   ]
 }
@@ -227,918 +227,858 @@
  {
   "nodes": [
     {
-      "name": "Bacillati",
-      "rank": "Kingdom",
-      "percent": 50.016,
-      "value": 50.016
-    },
-    {
-      "name": "Bacillota",
-      "rank": "Phylum",
-      "percent": 1.565,
-      "value": 1.565
-    },
-    {
-      "name": "Bacilli",
-      "rank": "Class",
-      "percent": 1.163,
-      "value": 1.163
-    },
-    {
-      "name": "Bacillales",
-      "rank": "Order",
-      "percent": 1.084,
-      "value": 1.084
-    },
-    {
-      "name": "Actinomycetota",
-      "rank": "Phylum",
-      "percent": 47.76,
-      "value": 47.76
-    },
-    {
-      "name": "Thermoleophilia",
-      "rank": "Class",
-      "percent": 2.524,
-      "value": 2.524
-    },
-    {
-      "name": "Solirubrobacterales",
-      "rank": "Order",
-      "percent": 2.312,
-      "value": 2.312
-    },
-    {
-      "name": "Actinomycetes",
-      "rank": "Class",
-      "percent": 43.595,
-      "value": 43.595
-    },
-    {
-      "name": "Geodermatophilales",
-      "rank": "Order",
-      "percent": 1.001,
-      "value": 1.001
-    },
-    {
-      "name": "Geodermatophilaceae",
-      "rank": "Family",
-      "percent": 1.002,
-      "value": 1.002
-    },
-    {
-      "name": "Streptosporangiales",
-      "rank": "Order",
-      "percent": 1.941,
-      "value": 1.941
-    },
-    {
-      "name": "Streptosporangiaceae",
-      "rank": "Family",
-      "percent": 1.077,
-      "value": 1.077
-    },
-    {
-      "name": "Pseudonocardiales",
-      "rank": "Order",
-      "percent": 3.757,
-      "value": 3.757
-    },
-    {
-      "name": "Pseudonocardiaceae",
-      "rank": "Family",
-      "percent": 3.755,
-      "value": 3.755
-    },
-    {
-      "name": "Pseudonocardia",
-      "rank": "Genus",
-      "percent": 1.117,
-      "value": 1.117
-    },
-    {
-      "name": "Amycolatopsis",
-      "rank": "Genus",
-      "percent": 1.131,
-      "value": 1.131
-    },
-    {
-      "name": "Micromonosporales",
-      "rank": "Order",
-      "percent": 4.457,
-      "value": 4.457
-    },
-    {
-      "name": "Micromonosporaceae",
-      "rank": "Family",
-      "percent": 4.457,
-      "value": 4.457
-    },
-    {
-      "name": "Actinoplanes",
-      "rank": "Genus",
-      "percent": 1.0,
-      "value": 1.0
-    },
-    {
-      "name": "Micromonospora",
-      "rank": "Genus",
-      "percent": 1.876,
-      "value": 1.876
-    },
-    {
-      "name": "Mycobacteriales",
-      "rank": "Order",
-      "percent": 4.739,
-      "value": 4.739
-    },
-    {
-      "name": "Nocardiaceae",
-      "rank": "Family",
-      "percent": 1.332,
-      "value": 1.332
-    },
-    {
-      "name": "Mycobacteriaceae",
-      "rank": "Family",
-      "percent": 2.478,
-      "value": 2.478
-    },
-    {
-      "name": "Mycobacterium",
-      "rank": "Genus",
-      "percent": 0.975,
-      "value": 0.975
-    },
-    {
-      "name": "Mycolicibacterium",
-      "rank": "Genus",
-      "percent": 1.192,
-      "value": 1.192
-    },
-    {
-      "name": "Propionibacteriales",
-      "rank": "Order",
-      "percent": 3.741,
-      "value": 3.741
-    },
-    {
-      "name": "Nocardioidaceae",
-      "rank": "Family",
-      "percent": 2.759,
-      "value": 2.759
-    },
-    {
-      "name": "Nocardioides",
-      "rank": "Genus",
-      "percent": 2.362,
-      "value": 2.362
-    },
-    {
-      "name": "Micrococcales",
-      "rank": "Order",
-      "percent": 6.5,
-      "value": 6.5
-    },
-    {
-      "name": "Micrococcaceae",
-      "rank": "Family",
-      "percent": 1.209,
-      "value": 1.209
-    },
-    {
-      "name": "Microbacteriaceae",
-      "rank": "Family",
-      "percent": 2.945,
-      "value": 2.945
-    },
-    {
-      "name": "Microbacterium",
-      "rank": "Genus",
-      "percent": 1.093,
-      "value": 1.093
-    },
-    {
-      "name": "Kitasatosporales",
-      "rank": "Order",
-      "percent": 12.122,
-      "value": 12.122
-    },
-    {
-      "name": "Streptomycetaceae",
-      "rank": "Family",
-      "percent": 12.096,
-      "value": 12.096
-    },
-    {
-      "name": "Streptomyces",
-      "rank": "Genus",
-      "percent": 10.972,
-      "value": 10.972
-    },
-    {
       "name": "Pseudomonadati",
       "rank": "Kingdom",
-      "percent": 44.837,
-      "value": 44.837
-    },
-    {
-      "name": "Bacteroidota",
-      "rank": "Phylum",
-      "percent": 1.096,
-      "value": 1.096
-    },
-    {
-      "name": "Planctomycetota",
-      "rank": "Phylum",
-      "percent": 2.484,
-      "value": 2.484
-    },
-    {
-      "name": "Planctomycetia",
-      "rank": "Class",
-      "percent": 2.338,
-      "value": 2.338
-    },
-    {
-      "name": "Myxococcota",
-      "rank": "Phylum",
-      "percent": 2.678,
-      "value": 2.678
-    },
-    {
-      "name": "Myxococcia",
-      "rank": "Class",
-      "percent": 1.185,
-      "value": 1.185
-    },
-    {
-      "name": "Myxococcales",
-      "rank": "Order",
-      "percent": 1.187,
-      "value": 1.187
-    },
-    {
-      "name": "Polyangiales",
-      "rank": "Order",
-      "percent": 1.264,
-      "value": 1.264
-    },
-    {
-      "name": "Polyangiaceae",
-      "rank": "Family",
-      "percent": 1.073,
-      "value": 1.073
-    },
-    {
-      "name": "Sorangium",
-      "rank": "Genus",
-      "percent": 0.94,
-      "value": 0.94
+      "percent": 50.142493532818854,
+      "value": 50.142493532818854
     },
     {
       "name": "Pseudomonadota",
       "rank": "Phylum",
-      "percent": 34.937,
-      "value": 34.937
-    },
-    {
-      "name": "Gammaproteobacteria",
-      "rank": "Class",
-      "percent": 5.738,
-      "value": 5.738
-    },
-    {
-      "name": "Pseudomonadales",
-      "rank": "Order",
-      "percent": 1.79,
-      "value": 1.79
-    },
-    {
-      "name": "Pseudomonadaceae",
-      "rank": "Family",
-      "percent": 1.74,
-      "value": 1.74
-    },
-    {
-      "name": "Pseudomonas",
-      "rank": "Genus",
-      "percent": 1.427,
-      "value": 1.427
-    },
-    {
-      "name": "Lysobacterales",
-      "rank": "Order",
-      "percent": 1.604,
-      "value": 1.604
-    },
-    {
-      "name": "Lysobacteraceae",
-      "rank": "Family",
-      "percent": 1.213,
-      "value": 1.213
-    },
-    {
-      "name": "Betaproteobacteria",
-      "rank": "Class",
-      "percent": 7.417,
-      "value": 7.417
-    },
-    {
-      "name": "Burkholderiales",
-      "rank": "Order",
-      "percent": 6.286,
-      "value": 6.286
-    },
-    {
-      "name": "Comamonadaceae",
-      "rank": "Family",
-      "percent": 1.713,
-      "value": 1.713
-    },
-    {
-      "name": "Burkholderiaceae",
-      "rank": "Family",
-      "percent": 2.105,
-      "value": 2.105
+      "percent": 38.128624930022404,
+      "value": 38.128624930022404
     },
     {
       "name": "Alphaproteobacteria",
       "rank": "Class",
-      "percent": 20.127,
-      "value": 20.127
-    },
-    {
-      "name": "Rhodospirillales",
-      "rank": "Order",
-      "percent": 0.981,
-      "value": 0.981
-    },
-    {
-      "name": "Rhodobacterales",
-      "rank": "Order",
-      "percent": 1.271,
-      "value": 1.271
-    },
-    {
-      "name": "Sphingomonadales",
-      "rank": "Order",
-      "percent": 2.959,
-      "value": 2.959
-    },
-    {
-      "name": "Sphingomonadaceae",
-      "rank": "Family",
-      "percent": 1.667,
-      "value": 1.667
-    },
-    {
-      "name": "Sphingomonas",
-      "rank": "Genus",
-      "percent": 1.345,
-      "value": 1.345
+      "percent": 20.972683338292438,
+      "value": 20.972683338292438
     },
     {
       "name": "Hyphomicrobiales",
       "rank": "Order",
-      "percent": 12.201,
-      "value": 12.201
-    },
-    {
-      "name": "Phyllobacteriaceae",
-      "rank": "Family",
-      "percent": 1.152,
-      "value": 1.152
-    },
-    {
-      "name": "Mesorhizobium",
-      "rank": "Genus",
-      "percent": 0.91,
-      "value": 0.91
-    },
-    {
-      "name": "Rhizobiaceae",
-      "rank": "Family",
-      "percent": 1.337,
-      "value": 1.337
-    },
-    {
-      "name": "Methylobacteriaceae",
-      "rank": "Family",
-      "percent": 1.59,
-      "value": 1.59
+      "percent": 12.796809775188391,
+      "value": 12.796809775188391
     },
     {
       "name": "Nitrobacteraceae",
       "rank": "Family",
-      "percent": 4.444,
-      "value": 4.444
+      "percent": 4.0367329256921565,
+      "value": 4.0367329256921565
     },
     {
       "name": "Bradyrhizobium",
       "rank": "Genus",
-      "percent": 3.601,
-      "value": 3.601
+      "percent": 3.234540188771448,
+      "value": 3.234540188771448
+    },
+    {
+      "name": "Rhizobiaceae",
+      "rank": "Family",
+      "percent": 1.9030047935973626,
+      "value": 1.9030047935973626
+    },
+    {
+      "name": "Phyllobacteriaceae",
+      "rank": "Family",
+      "percent": 1.334429460621567,
+      "value": 1.334429460621567
+    },
+    {
+      "name": "Mesorhizobium",
+      "rank": "Genus",
+      "percent": 1.0268807430995381,
+      "value": 1.0268807430995381
+    },
+    {
+      "name": "Methylobacteriaceae",
+      "rank": "Family",
+      "percent": 0.95699509184588,
+      "value": 0.95699509184588
+    },
+    {
+      "name": "Sphingomonadales",
+      "rank": "Order",
+      "percent": 2.4886490834102823,
+      "value": 2.4886490834102823
+    },
+    {
+      "name": "Sphingomonadaceae",
+      "rank": "Family",
+      "percent": 1.281847909022641,
+      "value": 1.281847909022641
+    },
+    {
+      "name": "Sphingomonas",
+      "rank": "Genus",
+      "percent": 0.9932854666966926,
+      "value": 0.9932854666966926
+    },
+    {
+      "name": "Rhodobacterales",
+      "rank": "Order",
+      "percent": 1.7216795347066278,
+      "value": 1.7216795347066278
+    },
+    {
+      "name": "Rhodospirillales",
+      "rank": "Order",
+      "percent": 1.2197099121440111,
+      "value": 1.2197099121440111
+    },
+    {
+      "name": "Betaproteobacteria",
+      "rank": "Class",
+      "percent": 8.104480586096487,
+      "value": 8.104480586096487
+    },
+    {
+      "name": "Burkholderiales",
+      "rank": "Order",
+      "percent": 6.691724449999442,
+      "value": 6.691724449999442
+    },
+    {
+      "name": "Burkholderiaceae",
+      "rank": "Family",
+      "percent": 2.374942457839345,
+      "value": 2.374942457839345
+    },
+    {
+      "name": "Comamonadaceae",
+      "rank": "Family",
+      "percent": 1.6626767753961027,
+      "value": 1.6626767753961027
+    },
+    {
+      "name": "Gammaproteobacteria",
+      "rank": "Class",
+      "percent": 7.0164385932068445,
+      "value": 7.0164385932068445
+    },
+    {
+      "name": "Pseudomonadales",
+      "rank": "Order",
+      "percent": 2.1426756177699238,
+      "value": 2.1426756177699238
+    },
+    {
+      "name": "Pseudomonadaceae",
+      "rank": "Family",
+      "percent": 2.071095732368886,
+      "value": 2.071095732368886
+    },
+    {
+      "name": "Pseudomonas",
+      "rank": "Genus",
+      "percent": 1.6764537327867166,
+      "value": 1.6764537327867166
+    },
+    {
+      "name": "Lysobacterales",
+      "rank": "Order",
+      "percent": 1.7699923397705188,
+      "value": 1.7699923397705188
+    },
+    {
+      "name": "Lysobacteraceae",
+      "rank": "Family",
+      "percent": 1.3188919467504017,
+      "value": 1.3188919467504017
+    },
+    {
+      "name": "Planctomycetota",
+      "rank": "Phylum",
+      "percent": 3.2516935558507902,
+      "value": 3.2516935558507902
+    },
+    {
+      "name": "Planctomycetia",
+      "rank": "Class",
+      "percent": 3.0999359989484896,
+      "value": 3.0999359989484896
+    },
+    {
+      "name": "Myxococcota",
+      "rank": "Phylum",
+      "percent": 3.2079087573516047,
+      "value": 3.2079087573516047
+    },
+    {
+      "name": "Polyangiales",
+      "rank": "Order",
+      "percent": 1.5102137900409782,
+      "value": 1.5102137900409782
+    },
+    {
+      "name": "Polyangiaceae",
+      "rank": "Family",
+      "percent": 1.2867376737682812,
+      "value": 1.2867376737682812
+    },
+    {
+      "name": "Sorangium",
+      "rank": "Genus",
+      "percent": 1.1322488425999198,
+      "value": 1.1322488425999198
+    },
+    {
+      "name": "Myxococcia",
+      "rank": "Class",
+      "percent": 1.4161023992706956,
+      "value": 1.4161023992706956
+    },
+    {
+      "name": "Myxococcales",
+      "rank": "Order",
+      "percent": 1.4161023992706956,
+      "value": 1.4161023992706956
+    },
+    {
+      "name": "Bacteroidota",
+      "rank": "Phylum",
+      "percent": 0.9889081927073771,
+      "value": 0.9889081927073771
+    },
+    {
+      "name": "Acidobacteriota",
+      "rank": "Phylum",
+      "percent": 1.0144181737663218,
+      "value": 1.0144181737663218
+    },
+    {
+      "name": "Bacillati",
+      "rank": "Kingdom",
+      "percent": 43.661258080396536,
+      "value": 43.661258080396536
+    },
+    {
+      "name": "Actinomycetota",
+      "rank": "Phylum",
+      "percent": 40.652002798802464,
+      "value": 40.652002798802464
+    },
+    {
+      "name": "Actinomycetes",
+      "rank": "Class",
+      "percent": 37.42087519553783,
+      "value": 37.42087519553783
+    },
+    {
+      "name": "Kitasatosporales",
+      "rank": "Order",
+      "percent": 11.83144601075688,
+      "value": 11.83144601075688
+    },
+    {
+      "name": "Streptomycetaceae",
+      "rank": "Family",
+      "percent": 11.806840425150272,
+      "value": 11.806840425150272
+    },
+    {
+      "name": "Streptomyces",
+      "rank": "Genus",
+      "percent": 10.768799442168884,
+      "value": 10.768799442168884
+    },
+    {
+      "name": "Micrococcales",
+      "rank": "Order",
+      "percent": 5.915843591438751,
+      "value": 5.915843591438751
+    },
+    {
+      "name": "Microbacteriaceae",
+      "rank": "Family",
+      "percent": 2.902982786641356,
+      "value": 2.902982786641356
+    },
+    {
+      "name": "Microbacterium",
+      "rank": "Genus",
+      "percent": 1.040265795794139,
+      "value": 1.040265795794139
+    },
+    {
+      "name": "Mycobacteriales",
+      "rank": "Order",
+      "percent": 4.2153148517108,
+      "value": 4.2153148517108
+    },
+    {
+      "name": "Mycobacteriaceae",
+      "rank": "Family",
+      "percent": 1.920960057977778,
+      "value": 1.920960057977778
+    },
+    {
+      "name": "Mycolicibacterium",
+      "rank": "Genus",
+      "percent": 0.9135539636185827,
+      "value": 0.9135539636185827
+    },
+    {
+      "name": "Nocardiaceae",
+      "rank": "Family",
+      "percent": 1.3691401580822957,
+      "value": 1.3691401580822957
+    },
+    {
+      "name": "Micromonosporales",
+      "rank": "Order",
+      "percent": 3.3381356731852474,
+      "value": 3.3381356731852474
+    },
+    {
+      "name": "Micromonosporaceae",
+      "rank": "Family",
+      "percent": 3.3381356731852474,
+      "value": 3.3381356731852474
+    },
+    {
+      "name": "Micromonospora",
+      "rank": "Genus",
+      "percent": 1.5499468969136903,
+      "value": 1.5499468969136903
+    },
+    {
+      "name": "Pseudonocardiales",
+      "rank": "Order",
+      "percent": 2.7595456679005634,
+      "value": 2.7595456679005634
+    },
+    {
+      "name": "Pseudonocardiaceae",
+      "rank": "Family",
+      "percent": 2.7595456679005634,
+      "value": 2.7595456679005634
+    },
+    {
+      "name": "Amycolatopsis",
+      "rank": "Genus",
+      "percent": 0.933957125023326,
+      "value": 0.933957125023326
+    },
+    {
+      "name": "Propionibacteriales",
+      "rank": "Order",
+      "percent": 2.5688870479417014,
+      "value": 2.5688870479417014
+    },
+    {
+      "name": "Nocardioidaceae",
+      "rank": "Family",
+      "percent": 1.7649277252374265,
+      "value": 1.7649277252374265
+    },
+    {
+      "name": "Nocardioides",
+      "rank": "Genus",
+      "percent": 1.4299275910854343,
+      "value": 1.4299275910854343
+    },
+    {
+      "name": "Streptosporangiales",
+      "rank": "Order",
+      "percent": 1.714522752027127,
+      "value": 1.714522752027127
+    },
+    {
+      "name": "Streptosporangiaceae",
+      "rank": "Family",
+      "percent": 0.9687703206353198,
+      "value": 0.9687703206353198
+    },
+    {
+      "name": "Thermoleophilia",
+      "rank": "Class",
+      "percent": 1.6178730246872826,
+      "value": 1.6178730246872826
+    },
+    {
+      "name": "Solirubrobacterales",
+      "rank": "Order",
+      "percent": 1.3734872855565332,
+      "value": 1.3734872855565332
+    },
+    {
+      "name": "Bacillota",
+      "rank": "Phylum",
+      "percent": 1.9540247557152515,
+      "value": 1.9540247557152515
+    },
+    {
+      "name": "Bacilli",
+      "rank": "Class",
+      "percent": 1.3563520063862378,
+      "value": 1.3563520063862378
+    },
+    {
+      "name": "Bacillales",
+      "rank": "Order",
+      "percent": 1.252020947004537,
+      "value": 1.252020947004537
     },
     {
       "name": "Viridiplantae",
       "rank": "Kingdom",
-      "percent": 2.804,
-      "value": 2.804
+      "percent": 3.453711382691017,
+      "value": 3.453711382691017
     },
     {
       "name": "Streptophyta",
       "rank": "Phylum",
-      "percent": 2.742,
-      "value": 2.742
+      "percent": 3.3875940458221003,
+      "value": 3.3875940458221003
     },
     {
       "name": "Magnoliopsida",
       "rank": "Class",
-      "percent": 2.631,
-      "value": 2.631
+      "percent": 3.2451577913818954,
+      "value": 3.2451577913818954
     },
     {
       "name": "Poales",
       "rank": "Order",
-      "percent": 1.046,
-      "value": 1.046
+      "percent": 1.2438150656003242,
+      "value": 1.2438150656003242
     },
     {
       "name": "Poaceae",
       "rank": "Family",
-      "percent": 1.022,
-      "value": 1.022
+      "percent": 1.211232712104097,
+      "value": 1.211232712104097
     },
     {
       "name": "Methanobacteriati",
       "rank": "Kingdom",
-      "percent": 0.977,
-      "value": 0.977
+      "percent": 1.1143960763707697,
+      "value": 1.1143960763707697
     },
     {
       "name": "Methanobacteriota",
       "rank": "Phylum",
-      "percent": 0.975,
-      "value": 0.975
+      "percent": 1.1116889193167714,
+      "value": 1.1116889193167714
     },
     {
       "name": "Halobacteria",
       "rank": "Class",
-      "percent": 0.92,
-      "value": 0.92
+      "percent": 1.0281107209147176,
+      "value": 1.0281107209147176
     },
     {
       "name": "Halobacteriales",
       "rank": "Order",
-      "percent": 0.918,
-      "value": 0.918
+      "percent": 1.0281107209147176,
+      "value": 1.0281107209147176
     }
   ],
   "links": [
     {
-      "source": "Bacillati",
-      "target": "Bacillota",
-      "rel": 100562,
-      "value": 1.565
-    },
-    {
-      "source": "Bacillota",
-      "target": "Bacilli",
-      "rel": 74745,
-      "value": 1.163
-    },
-    {
-      "source": "Bacilli",
-      "target": "Bacillales",
-      "rel": 69673,
-      "value": 1.084
-    },
-    {
-      "source": "Bacillati",
-      "target": "Actinomycetota",
-      "rel": 3068556,
-      "value": 47.76
-    },
-    {
-      "source": "Actinomycetota",
-      "target": "Thermoleophilia",
-      "rel": 162188,
-      "value": 2.524
-    },
-    {
-      "source": "Thermoleophilia",
-      "target": "Solirubrobacterales",
-      "rel": 148543,
-      "value": 2.312
-    },
-    {
-      "source": "Actinomycetota",
-      "target": "Actinomycetes",
-      "rel": 2800933,
-      "value": 43.595
-    },
-    {
-      "source": "Actinomycetes",
-      "target": "Geodermatophilales",
-      "rel": 64293,
-      "value": 1.001
-    },
-    {
-      "source": "Geodermatophilales",
-      "target": "Geodermatophilaceae",
-      "rel": 64385,
-      "value": 1.002
-    },
-    {
-      "source": "Actinomycetes",
-      "target": "Streptosporangiales",
-      "rel": 124715,
-      "value": 1.941
-    },
-    {
-      "source": "Streptosporangiales",
-      "target": "Streptosporangiaceae",
-      "rel": 69210,
-      "value": 1.077
-    },
-    {
-      "source": "Actinomycetes",
-      "target": "Pseudonocardiales",
-      "rel": 241381,
-      "value": 3.757
-    },
-    {
-      "source": "Pseudonocardiales",
-      "target": "Pseudonocardiaceae",
-      "rel": 241256,
-      "value": 3.755
-    },
-    {
-      "source": "Pseudonocardiaceae",
-      "target": "Pseudonocardia",
-      "rel": 71783,
-      "value": 1.117
-    },
-    {
-      "source": "Pseudonocardiaceae",
-      "target": "Amycolatopsis",
-      "rel": 72693,
-      "value": 1.131
-    },
-    {
-      "source": "Actinomycetes",
-      "target": "Micromonosporales",
-      "rel": 286342,
-      "value": 4.457
-    },
-    {
-      "source": "Micromonosporales",
-      "target": "Micromonosporaceae",
-      "rel": 286328,
-      "value": 4.457
-    },
-    {
-      "source": "Micromonosporaceae",
-      "target": "Actinoplanes",
-      "rel": 64281,
-      "value": 1.0
-    },
-    {
-      "source": "Micromonosporaceae",
-      "target": "Micromonospora",
-      "rel": 120523,
-      "value": 1.876
-    },
-    {
-      "source": "Actinomycetes",
-      "target": "Mycobacteriales",
-      "rel": 304494,
-      "value": 4.739
-    },
-    {
-      "source": "Mycobacteriales",
-      "target": "Nocardiaceae",
-      "rel": 85595,
-      "value": 1.332
-    },
-    {
-      "source": "Mycobacteriales",
-      "target": "Mycobacteriaceae",
-      "rel": 159215,
-      "value": 2.478
-    },
-    {
-      "source": "Mycobacteriaceae",
-      "target": "Mycobacterium",
-      "rel": 62626,
-      "value": 0.975
-    },
-    {
-      "source": "Mycobacteriaceae",
-      "target": "Mycolicibacterium",
-      "rel": 76591,
-      "value": 1.192
-    },
-    {
-      "source": "Actinomycetes",
-      "target": "Propionibacteriales",
-      "rel": 240356,
-      "value": 3.741
-    },
-    {
-      "source": "Propionibacteriales",
-      "target": "Nocardioidaceae",
-      "rel": 177285,
-      "value": 2.759
-    },
-    {
-      "source": "Nocardioidaceae",
-      "target": "Nocardioides",
-      "rel": 151758,
-      "value": 2.362
-    },
-    {
-      "source": "Actinomycetes",
-      "target": "Micrococcales",
-      "rel": 417593,
-      "value": 6.5
-    },
-    {
-      "source": "Micrococcales",
-      "target": "Micrococcaceae",
-      "rel": 77704,
-      "value": 1.209
-    },
-    {
-      "source": "Micrococcales",
-      "target": "Microbacteriaceae",
-      "rel": 189242,
-      "value": 2.945
-    },
-    {
-      "source": "Microbacteriaceae",
-      "target": "Microbacterium",
-      "rel": 70194,
-      "value": 1.093
-    },
-    {
-      "source": "Actinomycetes",
-      "target": "Kitasatosporales",
-      "rel": 778849,
-      "value": 12.122
-    },
-    {
-      "source": "Kitasatosporales",
-      "target": "Streptomycetaceae",
-      "rel": 777160,
-      "value": 12.096
-    },
-    {
-      "source": "Streptomycetaceae",
-      "target": "Streptomyces",
-      "rel": 704918,
-      "value": 10.972
-    },
-    {
-      "source": "Pseudomonadati",
-      "target": "Bacteroidota",
-      "rel": 70409,
-      "value": 1.096
-    },
-    {
-      "source": "Pseudomonadati",
-      "target": "Planctomycetota",
-      "rel": 159624,
-      "value": 2.484
-    },
-    {
-      "source": "Planctomycetota",
-      "target": "Planctomycetia",
-      "rel": 150241,
-      "value": 2.338
-    },
-    {
-      "source": "Pseudomonadati",
-      "target": "Myxococcota",
-      "rel": 172068,
-      "value": 2.678
-    },
-    {
-      "source": "Myxococcota",
-      "target": "Myxococcia",
-      "rel": 76167,
-      "value": 1.185
-    },
-    {
-      "source": "Myxococcia",
-      "target": "Myxococcales",
-      "rel": 76275,
-      "value": 1.187
-    },
-    {
-      "source": "Myxococcota",
-      "target": "Polyangiales",
-      "rel": 81215,
-      "value": 1.264
-    },
-    {
-      "source": "Polyangiales",
-      "target": "Polyangiaceae",
-      "rel": 68911,
-      "value": 1.073
-    },
-    {
-      "source": "Polyangiaceae",
-      "target": "Sorangium",
-      "rel": 60384,
-      "value": 0.94
-    },
-    {
       "source": "Pseudomonadati",
       "target": "Pseudomonadota",
-      "rel": 2244643,
-      "value": 34.937
-    },
-    {
-      "source": "Pseudomonadota",
-      "target": "Gammaproteobacteria",
-      "rel": 368637,
-      "value": 5.738
-    },
-    {
-      "source": "Gammaproteobacteria",
-      "target": "Pseudomonadales",
-      "rel": 114992,
-      "value": 1.79
-    },
-    {
-      "source": "Pseudomonadales",
-      "target": "Pseudomonadaceae",
-      "rel": 111780,
-      "value": 1.74
-    },
-    {
-      "source": "Pseudomonadaceae",
-      "target": "Pseudomonas",
-      "rel": 91689,
-      "value": 1.427
-    },
-    {
-      "source": "Gammaproteobacteria",
-      "target": "Lysobacterales",
-      "rel": 103084,
-      "value": 1.604
-    },
-    {
-      "source": "Lysobacterales",
-      "target": "Lysobacteraceae",
-      "rel": 77918,
-      "value": 1.213
-    },
-    {
-      "source": "Pseudomonadota",
-      "target": "Betaproteobacteria",
-      "rel": 476523,
-      "value": 7.417
-    },
-    {
-      "source": "Betaproteobacteria",
-      "target": "Burkholderiales",
-      "rel": 403845,
-      "value": 6.286
-    },
-    {
-      "source": "Burkholderiales",
-      "target": "Comamonadaceae",
-      "rel": 110030,
-      "value": 1.713
-    },
-    {
-      "source": "Burkholderiales",
-      "target": "Burkholderiaceae",
-      "rel": 135217,
-      "value": 2.105
+      "rel": 6323886,
+      "value": 38.128624930022404
     },
     {
       "source": "Pseudomonadota",
       "target": "Alphaproteobacteria",
-      "rel": 1293158,
-      "value": 20.127
-    },
-    {
-      "source": "Alphaproteobacteria",
-      "target": "Rhodospirillales",
-      "rel": 63018,
-      "value": 0.981
-    },
-    {
-      "source": "Alphaproteobacteria",
-      "target": "Rhodobacterales",
-      "rel": 81652,
-      "value": 1.271
-    },
-    {
-      "source": "Alphaproteobacteria",
-      "target": "Sphingomonadales",
-      "rel": 190097,
-      "value": 2.959
-    },
-    {
-      "source": "Sphingomonadales",
-      "target": "Sphingomonadaceae",
-      "rel": 107087,
-      "value": 1.667
-    },
-    {
-      "source": "Sphingomonadaceae",
-      "target": "Sphingomonas",
-      "rel": 86439,
-      "value": 1.345
+      "rel": 3478459,
+      "value": 20.972683338292438
     },
     {
       "source": "Alphaproteobacteria",
       "target": "Hyphomicrobiales",
-      "rel": 783899,
-      "value": 12.201
-    },
-    {
-      "source": "Hyphomicrobiales",
-      "target": "Phyllobacteriaceae",
-      "rel": 74044,
-      "value": 1.152
-    },
-    {
-      "source": "Phyllobacteriaceae",
-      "target": "Mesorhizobium",
-      "rel": 58440,
-      "value": 0.91
-    },
-    {
-      "source": "Hyphomicrobiales",
-      "target": "Rhizobiaceae",
-      "rel": 85897,
-      "value": 1.337
-    },
-    {
-      "source": "Hyphomicrobiales",
-      "target": "Methylobacteriaceae",
-      "rel": 102182,
-      "value": 1.59
+      "rel": 2122436,
+      "value": 12.796809775188391
     },
     {
       "source": "Hyphomicrobiales",
       "target": "Nitrobacteraceae",
-      "rel": 285522,
-      "value": 4.444
+      "rel": 669519,
+      "value": 4.0367329256921565
     },
     {
       "source": "Nitrobacteraceae",
       "target": "Bradyrhizobium",
-      "rel": 231369,
-      "value": 3.601
+      "rel": 536470,
+      "value": 3.234540188771448
+    },
+    {
+      "source": "Hyphomicrobiales",
+      "target": "Rhizobiaceae",
+      "rel": 315626,
+      "value": 1.9030047935973626
+    },
+    {
+      "source": "Hyphomicrobiales",
+      "target": "Phyllobacteriaceae",
+      "rel": 221324,
+      "value": 1.334429460621567
+    },
+    {
+      "source": "Phyllobacteriaceae",
+      "target": "Mesorhizobium",
+      "rel": 170315,
+      "value": 1.0268807430995381
+    },
+    {
+      "source": "Hyphomicrobiales",
+      "target": "Methylobacteriaceae",
+      "rel": 158724,
+      "value": 0.95699509184588
+    },
+    {
+      "source": "Alphaproteobacteria",
+      "target": "Sphingomonadales",
+      "rel": 412759,
+      "value": 2.4886490834102823
+    },
+    {
+      "source": "Sphingomonadales",
+      "target": "Sphingomonadaceae",
+      "rel": 212603,
+      "value": 1.281847909022641
+    },
+    {
+      "source": "Sphingomonadaceae",
+      "target": "Sphingomonas",
+      "rel": 164743,
+      "value": 0.9932854666966926
+    },
+    {
+      "source": "Alphaproteobacteria",
+      "target": "Rhodobacterales",
+      "rel": 285552,
+      "value": 1.7216795347066278
+    },
+    {
+      "source": "Alphaproteobacteria",
+      "target": "Rhodospirillales",
+      "rel": 202297,
+      "value": 1.2197099121440111
+    },
+    {
+      "source": "Pseudomonadota",
+      "target": "Betaproteobacteria",
+      "rel": 1344182,
+      "value": 8.104480586096487
+    },
+    {
+      "source": "Betaproteobacteria",
+      "target": "Burkholderiales",
+      "rel": 1109867,
+      "value": 6.691724449999442
+    },
+    {
+      "source": "Burkholderiales",
+      "target": "Burkholderiaceae",
+      "rel": 393900,
+      "value": 2.374942457839345
+    },
+    {
+      "source": "Burkholderiales",
+      "target": "Comamonadaceae",
+      "rel": 275766,
+      "value": 1.6626767753961027
+    },
+    {
+      "source": "Pseudomonadota",
+      "target": "Gammaproteobacteria",
+      "rel": 1163723,
+      "value": 7.0164385932068445
+    },
+    {
+      "source": "Gammaproteobacteria",
+      "target": "Pseudomonadales",
+      "rel": 355377,
+      "value": 2.1426756177699238
+    },
+    {
+      "source": "Pseudomonadales",
+      "target": "Pseudomonadaceae",
+      "rel": 343505,
+      "value": 2.071095732368886
+    },
+    {
+      "source": "Pseudomonadaceae",
+      "target": "Pseudomonas",
+      "rel": 278051,
+      "value": 1.6764537327867166
+    },
+    {
+      "source": "Gammaproteobacteria",
+      "target": "Lysobacterales",
+      "rel": 293565,
+      "value": 1.7699923397705188
+    },
+    {
+      "source": "Lysobacterales",
+      "target": "Lysobacteraceae",
+      "rel": 218747,
+      "value": 1.3188919467504017
+    },
+    {
+      "source": "Pseudomonadati",
+      "target": "Planctomycetota",
+      "rel": 539315,
+      "value": 3.2516935558507902
+    },
+    {
+      "source": "Planctomycetota",
+      "target": "Planctomycetia",
+      "rel": 514145,
+      "value": 3.0999359989484896
+    },
+    {
+      "source": "Pseudomonadati",
+      "target": "Myxococcota",
+      "rel": 532053,
+      "value": 3.2079087573516047
+    },
+    {
+      "source": "Myxococcota",
+      "target": "Polyangiales",
+      "rel": 250479,
+      "value": 1.5102137900409782
+    },
+    {
+      "source": "Polyangiales",
+      "target": "Polyangiaceae",
+      "rel": 213414,
+      "value": 1.2867376737682812
+    },
+    {
+      "source": "Polyangiaceae",
+      "target": "Sorangium",
+      "rel": 187791,
+      "value": 1.1322488425999198
+    },
+    {
+      "source": "Myxococcota",
+      "target": "Myxococcia",
+      "rel": 234870,
+      "value": 1.4161023992706956
+    },
+    {
+      "source": "Myxococcia",
+      "target": "Myxococcales",
+      "rel": 234870,
+      "value": 1.4161023992706956
+    },
+    {
+      "source": "Pseudomonadati",
+      "target": "Bacteroidota",
+      "rel": 164017,
+      "value": 0.9889081927073771
+    },
+    {
+      "source": "Pseudomonadati",
+      "target": "Acidobacteriota",
+      "rel": 168248,
+      "value": 1.0144181737663218
+    },
+    {
+      "source": "Bacillati",
+      "target": "Actinomycetota",
+      "rel": 6742405,
+      "value": 40.652002798802464
+    },
+    {
+      "source": "Actinomycetota",
+      "target": "Actinomycetes",
+      "rel": 6206501,
+      "value": 37.42087519553783
+    },
+    {
+      "source": "Actinomycetes",
+      "target": "Kitasatosporales",
+      "rel": 1962324,
+      "value": 11.83144601075688
+    },
+    {
+      "source": "Kitasatosporales",
+      "target": "Streptomycetaceae",
+      "rel": 1958243,
+      "value": 11.806840425150272
+    },
+    {
+      "source": "Streptomycetaceae",
+      "target": "Streptomyces",
+      "rel": 1786077,
+      "value": 10.768799442168884
+    },
+    {
+      "source": "Actinomycetes",
+      "target": "Micrococcales",
+      "rel": 981182,
+      "value": 5.915843591438751
+    },
+    {
+      "source": "Micrococcales",
+      "target": "Microbacteriaceae",
+      "rel": 481479,
+      "value": 2.902982786641356
+    },
+    {
+      "source": "Microbacteriaceae",
+      "target": "Microbacterium",
+      "rel": 172535,
+      "value": 1.040265795794139
+    },
+    {
+      "source": "Actinomycetes",
+      "target": "Mycobacteriales",
+      "rel": 699138,
+      "value": 4.2153148517108
+    },
+    {
+      "source": "Mycobacteriales",
+      "target": "Mycobacteriaceae",
+      "rel": 318604,
+      "value": 1.920960057977778
+    },
+    {
+      "source": "Mycobacteriaceae",
+      "target": "Mycolicibacterium",
+      "rel": 151519,
+      "value": 0.9135539636185827
+    },
+    {
+      "source": "Mycobacteriales",
+      "target": "Nocardiaceae",
+      "rel": 227081,
+      "value": 1.3691401580822957
+    },
+    {
+      "source": "Actinomycetes",
+      "target": "Micromonosporales",
+      "rel": 553652,
+      "value": 3.3381356731852474
+    },
+    {
+      "source": "Micromonosporales",
+      "target": "Micromonosporaceae",
+      "rel": 553652,
+      "value": 3.3381356731852474
+    },
+    {
+      "source": "Micromonosporaceae",
+      "target": "Micromonospora",
+      "rel": 257069,
+      "value": 1.5499468969136903
+    },
+    {
+      "source": "Actinomycetes",
+      "target": "Pseudonocardiales",
+      "rel": 457689,
+      "value": 2.7595456679005634
+    },
+    {
+      "source": "Pseudonocardiales",
+      "target": "Pseudonocardiaceae",
+      "rel": 457689,
+      "value": 2.7595456679005634
+    },
+    {
+      "source": "Pseudonocardiaceae",
+      "target": "Amycolatopsis",
+      "rel": 154903,
+      "value": 0.933957125023326
+    },
+    {
+      "source": "Actinomycetes",
+      "target": "Propionibacteriales",
+      "rel": 426067,
+      "value": 2.5688870479417014
+    },
+    {
+      "source": "Propionibacteriales",
+      "target": "Nocardioidaceae",
+      "rel": 292725,
+      "value": 1.7649277252374265
+    },
+    {
+      "source": "Nocardioidaceae",
+      "target": "Nocardioides",
+      "rel": 237163,
+      "value": 1.4299275910854343
+    },
+    {
+      "source": "Actinomycetes",
+      "target": "Streptosporangiales",
+      "rel": 284365,
+      "value": 1.714522752027127
+    },
+    {
+      "source": "Streptosporangiales",
+      "target": "Streptosporangiaceae",
+      "rel": 160677,
+      "value": 0.9687703206353198
+    },
+    {
+      "source": "Actinomycetota",
+      "target": "Thermoleophilia",
+      "rel": 268335,
+      "value": 1.6178730246872826
+    },
+    {
+      "source": "Thermoleophilia",
+      "target": "Solirubrobacterales",
+      "rel": 227802,
+      "value": 1.3734872855565332
+    },
+    {
+      "source": "Bacillati",
+      "target": "Bacillota",
+      "rel": 324088,
+      "value": 1.9540247557152515
+    },
+    {
+      "source": "Bacillota",
+      "target": "Bacilli",
+      "rel": 224960,
+      "value": 1.3563520063862378
+    },
+    {
+      "source": "Bacilli",
+      "target": "Bacillales",
+      "rel": 207656,
+      "value": 1.252020947004537
     },
     {
       "source": "Viridiplantae",
       "target": "Streptophyta",
-      "rel": 176142,
-      "value": 2.742
+      "rel": 561855,
+      "value": 3.3875940458221003
     },
     {
       "source": "Streptophyta",
       "target": "Magnoliopsida",
-      "rel": 169071,
-      "value": 2.631
+      "rel": 538231,
+      "value": 3.2451577913818954
     },
     {
       "source": "Magnoliopsida",
       "target": "Poales",
-      "rel": 67195,
-      "value": 1.046
+      "rel": 206295,
+      "value": 1.2438150656003242
     },
     {
       "source": "Poales",
       "target": "Poaceae",
-      "rel": 65643,
-      "value": 1.022
+      "rel": 200891,
+      "value": 1.211232712104097
     },
     {
       "source": "Methanobacteriati",
       "target": "Methanobacteriota",
-      "rel": 62614,
-      "value": 0.975
+      "rel": 184381,
+      "value": 1.1116889193167714
     },
     {
       "source": "Methanobacteriota",
       "target": "Halobacteria",
-      "rel": 59078,
-      "value": 0.92
+      "rel": 170519,
+      "value": 1.0281107209147176
     },
     {
       "source": "Halobacteria",
       "target": "Halobacteriales",
-      "rel": 58987,
-      "value": 0.918
+      "rel": 170519,
+      "value": 1.0281107209147176
     }
   ]
 }
@@ -1148,1362 +1088,1332 @@
  {
   "nodes": [
     {
-      "name": "Bacillati",
-      "rank": "Kingdom",
-      "percent": 50.016,
-      "value": 50.016
-    },
-    {
-      "name": "Bacillota",
-      "rank": "Phylum",
-      "percent": 1.565,
-      "value": 1.565
-    },
-    {
-      "name": "Bacilli",
-      "rank": "Class",
-      "percent": 1.163,
-      "value": 1.163
-    },
-    {
-      "name": "Bacillales",
-      "rank": "Order",
-      "percent": 1.084,
-      "value": 1.084
-    },
-    {
-      "name": "Actinomycetota",
-      "rank": "Phylum",
-      "percent": 47.76,
-      "value": 47.76
-    },
-    {
-      "name": "Acidimicrobiia",
-      "rank": "Class",
-      "percent": 0.658,
-      "value": 0.658
-    },
-    {
-      "name": "Acidimicrobiales",
-      "rank": "Order",
-      "percent": 0.651,
-      "value": 0.651
-    },
-    {
-      "name": "Thermoleophilia",
-      "rank": "Class",
-      "percent": 2.524,
-      "value": 2.524
-    },
-    {
-      "name": "Solirubrobacterales",
-      "rank": "Order",
-      "percent": 2.312,
-      "value": 2.312
-    },
-    {
-      "name": "Conexibacteraceae",
-      "rank": "Family",
-      "percent": 0.692,
-      "value": 0.692
-    },
-    {
-      "name": "Conexibacter",
-      "rank": "Genus",
-      "percent": 0.692,
-      "value": 0.692
-    },
-    {
-      "name": "Baekduiaceae",
-      "rank": "Family",
-      "percent": 0.82,
-      "value": 0.82
-    },
-    {
-      "name": "Baekduia",
-      "rank": "Genus",
-      "percent": 0.641,
-      "value": 0.641
-    },
-    {
-      "name": "Actinomycetes",
-      "rank": "Class",
-      "percent": 43.595,
-      "value": 43.595
-    },
-    {
-      "name": "Geodermatophilales",
-      "rank": "Order",
-      "percent": 1.001,
-      "value": 1.001
-    },
-    {
-      "name": "Geodermatophilaceae",
-      "rank": "Family",
-      "percent": 1.002,
-      "value": 1.002
-    },
-    {
-      "name": "Streptosporangiales",
-      "rank": "Order",
-      "percent": 1.941,
-      "value": 1.941
-    },
-    {
-      "name": "Thermomonosporaceae",
-      "rank": "Family",
-      "percent": 0.63,
-      "value": 0.63
-    },
-    {
-      "name": "Streptosporangiaceae",
-      "rank": "Family",
-      "percent": 1.077,
-      "value": 1.077
-    },
-    {
-      "name": "Pseudonocardiales",
-      "rank": "Order",
-      "percent": 3.757,
-      "value": 3.757
-    },
-    {
-      "name": "Pseudonocardiaceae",
-      "rank": "Family",
-      "percent": 3.755,
-      "value": 3.755
-    },
-    {
-      "name": "Pseudonocardia",
-      "rank": "Genus",
-      "percent": 1.117,
-      "value": 1.117
-    },
-    {
-      "name": "Amycolatopsis",
-      "rank": "Genus",
-      "percent": 1.131,
-      "value": 1.131
-    },
-    {
-      "name": "Micromonosporales",
-      "rank": "Order",
-      "percent": 4.457,
-      "value": 4.457
-    },
-    {
-      "name": "Micromonosporaceae",
-      "rank": "Family",
-      "percent": 4.457,
-      "value": 4.457
-    },
-    {
-      "name": "Dactylosporangium",
-      "rank": "Genus",
-      "percent": 0.692,
-      "value": 0.692
-    },
-    {
-      "name": "Actinoplanes",
-      "rank": "Genus",
-      "percent": 1.0,
-      "value": 1.0
-    },
-    {
-      "name": "Micromonospora",
-      "rank": "Genus",
-      "percent": 1.876,
-      "value": 1.876
-    },
-    {
-      "name": "Mycobacteriales",
-      "rank": "Order",
-      "percent": 4.739,
-      "value": 4.739
-    },
-    {
-      "name": "Nocardiaceae",
-      "rank": "Family",
-      "percent": 1.332,
-      "value": 1.332
-    },
-    {
-      "name": "Nocardia",
-      "rank": "Genus",
-      "percent": 0.775,
-      "value": 0.775
-    },
-    {
-      "name": "Mycobacteriaceae",
-      "rank": "Family",
-      "percent": 2.478,
-      "value": 2.478
-    },
-    {
-      "name": "Mycobacterium",
-      "rank": "Genus",
-      "percent": 0.975,
-      "value": 0.975
-    },
-    {
-      "name": "Mycolicibacterium",
-      "rank": "Genus",
-      "percent": 1.192,
-      "value": 1.192
-    },
-    {
-      "name": "Propionibacteriales",
-      "rank": "Order",
-      "percent": 3.741,
-      "value": 3.741
-    },
-    {
-      "name": "Kribbellaceae",
-      "rank": "Family",
-      "percent": 0.521,
-      "value": 0.521
-    },
-    {
-      "name": "Kribbella",
-      "rank": "Genus",
-      "percent": 0.521,
-      "value": 0.521
-    },
-    {
-      "name": "Nocardioidaceae",
-      "rank": "Family",
-      "percent": 2.759,
-      "value": 2.759
-    },
-    {
-      "name": "Nocardioides",
-      "rank": "Genus",
-      "percent": 2.362,
-      "value": 2.362
-    },
-    {
-      "name": "Micrococcales",
-      "rank": "Order",
-      "percent": 6.5,
-      "value": 6.5
-    },
-    {
-      "name": "Cellulomonadaceae",
-      "rank": "Family",
-      "percent": 0.528,
-      "value": 0.528
-    },
-    {
-      "name": "Micrococcaceae",
-      "rank": "Family",
-      "percent": 1.209,
-      "value": 1.209
-    },
-    {
-      "name": "Arthrobacter",
-      "rank": "Genus",
-      "percent": 0.601,
-      "value": 0.601
-    },
-    {
-      "name": "Microbacteriaceae",
-      "rank": "Family",
-      "percent": 2.945,
-      "value": 2.945
-    },
-    {
-      "name": "Microbacterium",
-      "rank": "Genus",
-      "percent": 1.093,
-      "value": 1.093
-    },
-    {
-      "name": "Kitasatosporales",
-      "rank": "Order",
-      "percent": 12.122,
-      "value": 12.122
-    },
-    {
-      "name": "Streptomycetaceae",
-      "rank": "Family",
-      "percent": 12.096,
-      "value": 12.096
-    },
-    {
-      "name": "Kitasatospora",
-      "rank": "Genus",
-      "percent": 0.558,
-      "value": 0.558
-    },
-    {
-      "name": "Streptomyces",
-      "rank": "Genus",
-      "percent": 10.972,
-      "value": 10.972
-    },
-    {
       "name": "Pseudomonadati",
       "rank": "Kingdom",
-      "percent": 44.837,
-      "value": 44.837
-    },
-    {
-      "name": "Acidobacteriota",
-      "rank": "Phylum",
-      "percent": 0.789,
-      "value": 0.789
-    },
-    {
-      "name": "Gemmatimonadota",
-      "rank": "Phylum",
-      "percent": 0.534,
-      "value": 0.534
-    },
-    {
-      "name": "Gemmatimonadia",
-      "rank": "Class",
-      "percent": 0.504,
-      "value": 0.504
-    },
-    {
-      "name": "Bacteroidota",
-      "rank": "Phylum",
-      "percent": 1.096,
-      "value": 1.096
-    },
-    {
-      "name": "Planctomycetota",
-      "rank": "Phylum",
-      "percent": 2.484,
-      "value": 2.484
-    },
-    {
-      "name": "Planctomycetia",
-      "rank": "Class",
-      "percent": 2.338,
-      "value": 2.338
-    },
-    {
-      "name": "Isosphaerales",
-      "rank": "Order",
-      "percent": 0.724,
-      "value": 0.724
-    },
-    {
-      "name": "Isosphaeraceae",
-      "rank": "Family",
-      "percent": 0.722,
-      "value": 0.722
-    },
-    {
-      "name": "Gemmatales",
-      "rank": "Order",
-      "percent": 0.703,
-      "value": 0.703
-    },
-    {
-      "name": "Gemmataceae",
-      "rank": "Family",
-      "percent": 0.704,
-      "value": 0.704
-    },
-    {
-      "name": "Myxococcota",
-      "rank": "Phylum",
-      "percent": 2.678,
-      "value": 2.678
-    },
-    {
-      "name": "Myxococcia",
-      "rank": "Class",
-      "percent": 1.185,
-      "value": 1.185
-    },
-    {
-      "name": "Myxococcales",
-      "rank": "Order",
-      "percent": 1.187,
-      "value": 1.187
-    },
-    {
-      "name": "Polyangiales",
-      "rank": "Order",
-      "percent": 1.264,
-      "value": 1.264
-    },
-    {
-      "name": "Polyangiaceae",
-      "rank": "Family",
-      "percent": 1.073,
-      "value": 1.073
-    },
-    {
-      "name": "Sorangium",
-      "rank": "Genus",
-      "percent": 0.94,
-      "value": 0.94
+      "percent": 50.142493532818854,
+      "value": 50.142493532818854
     },
     {
       "name": "Pseudomonadota",
       "rank": "Phylum",
-      "percent": 34.937,
-      "value": 34.937
-    },
-    {
-      "name": "Gammaproteobacteria",
-      "rank": "Class",
-      "percent": 5.738,
-      "value": 5.738
-    },
-    {
-      "name": "Enterobacterales",
-      "rank": "Order",
-      "percent": 0.597,
-      "value": 0.597
-    },
-    {
-      "name": "Pseudomonadales",
-      "rank": "Order",
-      "percent": 1.79,
-      "value": 1.79
-    },
-    {
-      "name": "Pseudomonadaceae",
-      "rank": "Family",
-      "percent": 1.74,
-      "value": 1.74
-    },
-    {
-      "name": "Pseudomonas",
-      "rank": "Genus",
-      "percent": 1.427,
-      "value": 1.427
-    },
-    {
-      "name": "Lysobacterales",
-      "rank": "Order",
-      "percent": 1.604,
-      "value": 1.604
-    },
-    {
-      "name": "Lysobacteraceae",
-      "rank": "Family",
-      "percent": 1.213,
-      "value": 1.213
-    },
-    {
-      "name": "Betaproteobacteria",
-      "rank": "Class",
-      "percent": 7.417,
-      "value": 7.417
-    },
-    {
-      "name": "Burkholderiales",
-      "rank": "Order",
-      "percent": 6.286,
-      "value": 6.286
-    },
-    {
-      "name": "Alcaligenaceae",
-      "rank": "Family",
-      "percent": 0.524,
-      "value": 0.524
-    },
-    {
-      "name": "Sphaerotilaceae",
-      "rank": "Family",
-      "percent": 0.643,
-      "value": 0.643
-    },
-    {
-      "name": "Oxalobacteraceae",
-      "rank": "Family",
-      "percent": 0.795,
-      "value": 0.795
-    },
-    {
-      "name": "Comamonadaceae",
-      "rank": "Family",
-      "percent": 1.713,
-      "value": 1.713
-    },
-    {
-      "name": "Variovorax",
-      "rank": "Genus",
-      "percent": 0.632,
-      "value": 0.632
-    },
-    {
-      "name": "Burkholderiaceae",
-      "rank": "Family",
-      "percent": 2.105,
-      "value": 2.105
-    },
-    {
-      "name": "Burkholderia",
-      "rank": "Genus",
-      "percent": 0.712,
-      "value": 0.712
+      "percent": 38.128624930022404,
+      "value": 38.128624930022404
     },
     {
       "name": "Alphaproteobacteria",
       "rank": "Class",
-      "percent": 20.127,
-      "value": 20.127
-    },
-    {
-      "name": "Acetobacterales",
-      "rank": "Order",
-      "percent": 0.871,
-      "value": 0.871
-    },
-    {
-      "name": "Roseomonadaceae",
-      "rank": "Family",
-      "percent": 0.536,
-      "value": 0.536
-    },
-    {
-      "name": "Caulobacterales",
-      "rank": "Order",
-      "percent": 0.686,
-      "value": 0.686
-    },
-    {
-      "name": "Caulobacteraceae",
-      "rank": "Family",
-      "percent": 0.685,
-      "value": 0.685
-    },
-    {
-      "name": "Rhodospirillales",
-      "rank": "Order",
-      "percent": 0.981,
-      "value": 0.981
-    },
-    {
-      "name": "Azospirillaceae",
-      "rank": "Family",
-      "percent": 0.514,
-      "value": 0.514
-    },
-    {
-      "name": "Rhodobacterales",
-      "rank": "Order",
-      "percent": 1.271,
-      "value": 1.271
-    },
-    {
-      "name": "Roseobacteraceae",
-      "rank": "Family",
-      "percent": 0.512,
-      "value": 0.512
-    },
-    {
-      "name": "Paracoccaceae",
-      "rank": "Family",
-      "percent": 0.661,
-      "value": 0.661
-    },
-    {
-      "name": "Sphingomonadales",
-      "rank": "Order",
-      "percent": 2.959,
-      "value": 2.959
-    },
-    {
-      "name": "Sphingomonadaceae",
-      "rank": "Family",
-      "percent": 1.667,
-      "value": 1.667
-    },
-    {
-      "name": "Sphingomonas",
-      "rank": "Genus",
-      "percent": 1.345,
-      "value": 1.345
+      "percent": 20.972683338292438,
+      "value": 20.972683338292438
     },
     {
       "name": "Hyphomicrobiales",
       "rank": "Order",
-      "percent": 12.201,
-      "value": 12.201
-    },
-    {
-      "name": "Phyllobacteriaceae",
-      "rank": "Family",
-      "percent": 1.152,
-      "value": 1.152
-    },
-    {
-      "name": "Mesorhizobium",
-      "rank": "Genus",
-      "percent": 0.91,
-      "value": 0.91
-    },
-    {
-      "name": "Rhizobiaceae",
-      "rank": "Family",
-      "percent": 1.337,
-      "value": 1.337
-    },
-    {
-      "name": "Rhizobium",
-      "rank": "Genus",
-      "percent": 0.522,
-      "value": 0.522
-    },
-    {
-      "name": "Methylobacteriaceae",
-      "rank": "Family",
-      "percent": 1.59,
-      "value": 1.59
-    },
-    {
-      "name": "Methylobacterium",
-      "rank": "Genus",
-      "percent": 0.664,
-      "value": 0.664
-    },
-    {
-      "name": "Microvirga",
-      "rank": "Genus",
-      "percent": 0.79,
-      "value": 0.79
+      "percent": 12.796809775188391,
+      "value": 12.796809775188391
     },
     {
       "name": "Nitrobacteraceae",
       "rank": "Family",
-      "percent": 4.444,
-      "value": 4.444
+      "percent": 4.0367329256921565,
+      "value": 4.0367329256921565
     },
     {
       "name": "Bradyrhizobium",
       "rank": "Genus",
-      "percent": 3.601,
-      "value": 3.601
+      "percent": 3.234540188771448,
+      "value": 3.234540188771448
+    },
+    {
+      "name": "Rhizobiaceae",
+      "rank": "Family",
+      "percent": 1.9030047935973626,
+      "value": 1.9030047935973626
+    },
+    {
+      "name": "Rhizobium",
+      "rank": "Genus",
+      "percent": 0.6243343272639355,
+      "value": 0.6243343272639355
+    },
+    {
+      "name": "Phyllobacteriaceae",
+      "rank": "Family",
+      "percent": 1.334429460621567,
+      "value": 1.334429460621567
+    },
+    {
+      "name": "Mesorhizobium",
+      "rank": "Genus",
+      "percent": 1.0268807430995381,
+      "value": 1.0268807430995381
+    },
+    {
+      "name": "Methylobacteriaceae",
+      "rank": "Family",
+      "percent": 0.95699509184588,
+      "value": 0.95699509184588
+    },
+    {
+      "name": "Methylobacterium",
+      "rank": "Genus",
+      "percent": 0.548383197176598,
+      "value": 0.548383197176598
+    },
+    {
+      "name": "Sphingomonadales",
+      "rank": "Order",
+      "percent": 2.4886490834102823,
+      "value": 2.4886490834102823
+    },
+    {
+      "name": "Sphingomonadaceae",
+      "rank": "Family",
+      "percent": 1.281847909022641,
+      "value": 1.281847909022641
+    },
+    {
+      "name": "Sphingomonas",
+      "rank": "Genus",
+      "percent": 0.9932854666966926,
+      "value": 0.9932854666966926
+    },
+    {
+      "name": "Rhodobacterales",
+      "rank": "Order",
+      "percent": 1.7216795347066278,
+      "value": 1.7216795347066278
+    },
+    {
+      "name": "Paracoccaceae",
+      "rank": "Family",
+      "percent": 0.8894910152833788,
+      "value": 0.8894910152833788
+    },
+    {
+      "name": "Roseobacteraceae",
+      "rank": "Family",
+      "percent": 0.6861648296887705,
+      "value": 0.6861648296887705
+    },
+    {
+      "name": "Rhodospirillales",
+      "rank": "Order",
+      "percent": 1.2197099121440111,
+      "value": 1.2197099121440111
+    },
+    {
+      "name": "Azospirillaceae",
+      "rank": "Family",
+      "percent": 0.5639749747749034,
+      "value": 0.5639749747749034
+    },
+    {
+      "name": "Acetobacterales",
+      "rank": "Order",
+      "percent": 0.6577909296974225,
+      "value": 0.6577909296974225
+    },
+    {
+      "name": "Caulobacterales",
+      "rank": "Order",
+      "percent": 0.6292904143427471,
+      "value": 0.6292904143427471
+    },
+    {
+      "name": "Caulobacteraceae",
+      "rank": "Family",
+      "percent": 0.6292904143427471,
+      "value": 0.6292904143427471
+    },
+    {
+      "name": "Betaproteobacteria",
+      "rank": "Class",
+      "percent": 8.104480586096487,
+      "value": 8.104480586096487
+    },
+    {
+      "name": "Burkholderiales",
+      "rank": "Order",
+      "percent": 6.691724449999442,
+      "value": 6.691724449999442
+    },
+    {
+      "name": "Burkholderiaceae",
+      "rank": "Family",
+      "percent": 2.374942457839345,
+      "value": 2.374942457839345
+    },
+    {
+      "name": "Burkholderia",
+      "rank": "Genus",
+      "percent": 0.7923107092781628,
+      "value": 0.7923107092781628
+    },
+    {
+      "name": "Cupriavidus",
+      "rank": "Genus",
+      "percent": 0.5061238123403554,
+      "value": 0.5061238123403554
+    },
+    {
+      "name": "Comamonadaceae",
+      "rank": "Family",
+      "percent": 1.6626767753961027,
+      "value": 1.6626767753961027
+    },
+    {
+      "name": "Variovorax",
+      "rank": "Genus",
+      "percent": 0.6050767334321536,
+      "value": 0.6050767334321536
+    },
+    {
+      "name": "Oxalobacteraceae",
+      "rank": "Family",
+      "percent": 0.8171815842174553,
+      "value": 0.8171815842174553
+    },
+    {
+      "name": "Sphaerotilaceae",
+      "rank": "Family",
+      "percent": 0.6811906547009119,
+      "value": 0.6811906547009119
+    },
+    {
+      "name": "Alcaligenaceae",
+      "rank": "Family",
+      "percent": 0.5937657609749142,
+      "value": 0.5937657609749142
+    },
+    {
+      "name": "Rhodocyclales",
+      "rank": "Order",
+      "percent": 0.5235002636312743,
+      "value": 0.5235002636312743
+    },
+    {
+      "name": "Gammaproteobacteria",
+      "rank": "Class",
+      "percent": 7.0164385932068445,
+      "value": 7.0164385932068445
+    },
+    {
+      "name": "Pseudomonadales",
+      "rank": "Order",
+      "percent": 2.1426756177699238,
+      "value": 2.1426756177699238
+    },
+    {
+      "name": "Pseudomonadaceae",
+      "rank": "Family",
+      "percent": 2.071095732368886,
+      "value": 2.071095732368886
+    },
+    {
+      "name": "Pseudomonas",
+      "rank": "Genus",
+      "percent": 1.6764537327867166,
+      "value": 1.6764537327867166
+    },
+    {
+      "name": "Lysobacterales",
+      "rank": "Order",
+      "percent": 1.7699923397705188,
+      "value": 1.7699923397705188
+    },
+    {
+      "name": "Lysobacteraceae",
+      "rank": "Family",
+      "percent": 1.3188919467504017,
+      "value": 1.3188919467504017
+    },
+    {
+      "name": "Enterobacterales",
+      "rank": "Order",
+      "percent": 0.7331270708771701,
+      "value": 0.7331270708771701
+    },
+    {
+      "name": "Oceanospirillales",
+      "rank": "Order",
+      "percent": 0.5062866035217762,
+      "value": 0.5062866035217762
+    },
+    {
+      "name": "Planctomycetota",
+      "rank": "Phylum",
+      "percent": 3.2516935558507902,
+      "value": 3.2516935558507902
+    },
+    {
+      "name": "Planctomycetia",
+      "rank": "Class",
+      "percent": 3.0999359989484896,
+      "value": 3.0999359989484896
+    },
+    {
+      "name": "Gemmatales",
+      "rank": "Order",
+      "percent": 0.8926805165786238,
+      "value": 0.8926805165786238
+    },
+    {
+      "name": "Gemmataceae",
+      "rank": "Family",
+      "percent": 0.8926805165786238,
+      "value": 0.8926805165786238
+    },
+    {
+      "name": "Pirellulales",
+      "rank": "Order",
+      "percent": 0.7682236437308966,
+      "value": 0.7682236437308966
+    },
+    {
+      "name": "Isosphaerales",
+      "rank": "Order",
+      "percent": 0.6184195810056455,
+      "value": 0.6184195810056455
+    },
+    {
+      "name": "Isosphaeraceae",
+      "rank": "Family",
+      "percent": 0.6184195810056455,
+      "value": 0.6184195810056455
+    },
+    {
+      "name": "Planctomycetales",
+      "rank": "Order",
+      "percent": 0.5453866335778517,
+      "value": 0.5453866335778517
+    },
+    {
+      "name": "Planctomycetaceae",
+      "rank": "Family",
+      "percent": 0.5453866335778517,
+      "value": 0.5453866335778517
+    },
+    {
+      "name": "Myxococcota",
+      "rank": "Phylum",
+      "percent": 3.2079087573516047,
+      "value": 3.2079087573516047
+    },
+    {
+      "name": "Polyangiales",
+      "rank": "Order",
+      "percent": 1.5102137900409782,
+      "value": 1.5102137900409782
+    },
+    {
+      "name": "Polyangiaceae",
+      "rank": "Family",
+      "percent": 1.2867376737682812,
+      "value": 1.2867376737682812
+    },
+    {
+      "name": "Sorangium",
+      "rank": "Genus",
+      "percent": 1.1322488425999198,
+      "value": 1.1322488425999198
+    },
+    {
+      "name": "Myxococcia",
+      "rank": "Class",
+      "percent": 1.4161023992706956,
+      "value": 1.4161023992706956
+    },
+    {
+      "name": "Myxococcales",
+      "rank": "Order",
+      "percent": 1.4161023992706956,
+      "value": 1.4161023992706956
+    },
+    {
+      "name": "Bacteroidota",
+      "rank": "Phylum",
+      "percent": 0.9889081927073771,
+      "value": 0.9889081927073771
+    },
+    {
+      "name": "Acidobacteriota",
+      "rank": "Phylum",
+      "percent": 1.0144181737663218,
+      "value": 1.0144181737663218
+    },
+    {
+      "name": "Thermodesulfobacteriota",
+      "rank": "Phylum",
+      "percent": 0.6536427692226993,
+      "value": 0.6536427692226993
+    },
+    {
+      "name": "Bacillati",
+      "rank": "Kingdom",
+      "percent": 43.661258080396536,
+      "value": 43.661258080396536
+    },
+    {
+      "name": "Actinomycetota",
+      "rank": "Phylum",
+      "percent": 40.652002798802464,
+      "value": 40.652002798802464
+    },
+    {
+      "name": "Actinomycetes",
+      "rank": "Class",
+      "percent": 37.42087519553783,
+      "value": 37.42087519553783
+    },
+    {
+      "name": "Kitasatosporales",
+      "rank": "Order",
+      "percent": 11.83144601075688,
+      "value": 11.83144601075688
+    },
+    {
+      "name": "Streptomycetaceae",
+      "rank": "Family",
+      "percent": 11.806840425150272,
+      "value": 11.806840425150272
+    },
+    {
+      "name": "Streptomyces",
+      "rank": "Genus",
+      "percent": 10.768799442168884,
+      "value": 10.768799442168884
+    },
+    {
+      "name": "Kitasatospora",
+      "rank": "Genus",
+      "percent": 0.5318146724897675,
+      "value": 0.5318146724897675
+    },
+    {
+      "name": "Micrococcales",
+      "rank": "Order",
+      "percent": 5.915843591438751,
+      "value": 5.915843591438751
+    },
+    {
+      "name": "Microbacteriaceae",
+      "rank": "Family",
+      "percent": 2.902982786641356,
+      "value": 2.902982786641356
+    },
+    {
+      "name": "Microbacterium",
+      "rank": "Genus",
+      "percent": 1.040265795794139,
+      "value": 1.040265795794139
+    },
+    {
+      "name": "Micrococcaceae",
+      "rank": "Family",
+      "percent": 0.828414175735492,
+      "value": 0.828414175735492
+    },
+    {
+      "name": "Mycobacteriales",
+      "rank": "Order",
+      "percent": 4.2153148517108,
+      "value": 4.2153148517108
+    },
+    {
+      "name": "Mycobacteriaceae",
+      "rank": "Family",
+      "percent": 1.920960057977778,
+      "value": 1.920960057977778
+    },
+    {
+      "name": "Mycolicibacterium",
+      "rank": "Genus",
+      "percent": 0.9135539636185827,
+      "value": 0.9135539636185827
+    },
+    {
+      "name": "Mycobacterium",
+      "rank": "Genus",
+      "percent": 0.7397231283762213,
+      "value": 0.7397231283762213
+    },
+    {
+      "name": "Nocardiaceae",
+      "rank": "Family",
+      "percent": 1.3691401580822957,
+      "value": 1.3691401580822957
+    },
+    {
+      "name": "Nocardia",
+      "rank": "Genus",
+      "percent": 0.8112728672621808,
+      "value": 0.8112728672621808
+    },
+    {
+      "name": "Micromonosporales",
+      "rank": "Order",
+      "percent": 3.3381356731852474,
+      "value": 3.3381356731852474
+    },
+    {
+      "name": "Micromonosporaceae",
+      "rank": "Family",
+      "percent": 3.3381356731852474,
+      "value": 3.3381356731852474
+    },
+    {
+      "name": "Micromonospora",
+      "rank": "Genus",
+      "percent": 1.5499468969136903,
+      "value": 1.5499468969136903
+    },
+    {
+      "name": "Dactylosporangium",
+      "rank": "Genus",
+      "percent": 0.5451756079723061,
+      "value": 0.5451756079723061
+    },
+    {
+      "name": "Actinoplanes",
+      "rank": "Genus",
+      "percent": 0.5428000625841654,
+      "value": 0.5428000625841654
+    },
+    {
+      "name": "Pseudonocardiales",
+      "rank": "Order",
+      "percent": 2.7595456679005634,
+      "value": 2.7595456679005634
+    },
+    {
+      "name": "Pseudonocardiaceae",
+      "rank": "Family",
+      "percent": 2.7595456679005634,
+      "value": 2.7595456679005634
+    },
+    {
+      "name": "Amycolatopsis",
+      "rank": "Genus",
+      "percent": 0.933957125023326,
+      "value": 0.933957125023326
+    },
+    {
+      "name": "Pseudonocardia",
+      "rank": "Genus",
+      "percent": 0.5161143674371814,
+      "value": 0.5161143674371814
+    },
+    {
+      "name": "Propionibacteriales",
+      "rank": "Order",
+      "percent": 2.5688870479417014,
+      "value": 2.5688870479417014
+    },
+    {
+      "name": "Nocardioidaceae",
+      "rank": "Family",
+      "percent": 1.7649277252374265,
+      "value": 1.7649277252374265
+    },
+    {
+      "name": "Nocardioides",
+      "rank": "Genus",
+      "percent": 1.4299275910854343,
+      "value": 1.4299275910854343
+    },
+    {
+      "name": "Streptosporangiales",
+      "rank": "Order",
+      "percent": 1.714522752027127,
+      "value": 1.714522752027127
+    },
+    {
+      "name": "Streptosporangiaceae",
+      "rank": "Family",
+      "percent": 0.9687703206353198,
+      "value": 0.9687703206353198
+    },
+    {
+      "name": "Thermomonosporaceae",
+      "rank": "Family",
+      "percent": 0.5229214505417781,
+      "value": 0.5229214505417781
+    },
+    {
+      "name": "Thermoleophilia",
+      "rank": "Class",
+      "percent": 1.6178730246872826,
+      "value": 1.6178730246872826
+    },
+    {
+      "name": "Solirubrobacterales",
+      "rank": "Order",
+      "percent": 1.3734872855565332,
+      "value": 1.3734872855565332
+    },
+    {
+      "name": "Acidimicrobiia",
+      "rank": "Class",
+      "percent": 0.7604759893558685,
+      "value": 0.7604759893558685
+    },
+    {
+      "name": "Acidimicrobiales",
+      "rank": "Order",
+      "percent": 0.7460900723606801,
+      "value": 0.7460900723606801
+    },
+    {
+      "name": "Bacillota",
+      "rank": "Phylum",
+      "percent": 1.9540247557152515,
+      "value": 1.9540247557152515
+    },
+    {
+      "name": "Bacilli",
+      "rank": "Class",
+      "percent": 1.3563520063862378,
+      "value": 1.3563520063862378
+    },
+    {
+      "name": "Bacillales",
+      "rank": "Order",
+      "percent": 1.252020947004537,
+      "value": 1.252020947004537
+    },
+    {
+      "name": "Bacillaceae",
+      "rank": "Family",
+      "percent": 0.5338164010909421,
+      "value": 0.5338164010909421
+    },
+    {
+      "name": "Paenibacillaceae",
+      "rank": "Family",
+      "percent": 0.49859321287388836,
+      "value": 0.49859321287388836
+    },
+    {
+      "name": "Cyanobacteriota",
+      "rank": "Phylum",
+      "percent": 0.5319051120350013,
+      "value": 0.5319051120350013
+    },
+    {
+      "name": "Cyanophyceae",
+      "rank": "Class",
+      "percent": 0.531181595673131,
+      "value": 0.531181595673131
     },
     {
       "name": "Viridiplantae",
       "rank": "Kingdom",
-      "percent": 2.804,
-      "value": 2.804
+      "percent": 3.453711382691017,
+      "value": 3.453711382691017
     },
     {
       "name": "Streptophyta",
       "rank": "Phylum",
-      "percent": 2.742,
-      "value": 2.742
+      "percent": 3.3875940458221003,
+      "value": 3.3875940458221003
     },
     {
       "name": "Magnoliopsida",
       "rank": "Class",
-      "percent": 2.631,
-      "value": 2.631
+      "percent": 3.2451577913818954,
+      "value": 3.2451577913818954
     },
     {
       "name": "Poales",
       "rank": "Order",
-      "percent": 1.046,
-      "value": 1.046
+      "percent": 1.2438150656003242,
+      "value": 1.2438150656003242
     },
     {
       "name": "Poaceae",
       "rank": "Family",
-      "percent": 1.022,
-      "value": 1.022
+      "percent": 1.211232712104097,
+      "value": 1.211232712104097
+    },
+    {
+      "name": "Fungi",
+      "rank": "Kingdom",
+      "percent": 0.4908576171048915,
+      "value": 0.4908576171048915
     },
     {
       "name": "Methanobacteriati",
       "rank": "Kingdom",
-      "percent": 0.977,
-      "value": 0.977
+      "percent": 1.1143960763707697,
+      "value": 1.1143960763707697
     },
     {
       "name": "Methanobacteriota",
       "rank": "Phylum",
-      "percent": 0.975,
-      "value": 0.975
+      "percent": 1.1116889193167714,
+      "value": 1.1116889193167714
     },
     {
       "name": "Halobacteria",
       "rank": "Class",
-      "percent": 0.92,
-      "value": 0.92
+      "percent": 1.0281107209147176,
+      "value": 1.0281107209147176
     },
     {
       "name": "Halobacteriales",
       "rank": "Order",
-      "percent": 0.918,
-      "value": 0.918
+      "percent": 1.0281107209147176,
+      "value": 1.0281107209147176
     }
   ],
   "links": [
     {
-      "source": "Bacillati",
-      "target": "Bacillota",
-      "rel": 100562,
-      "value": 1.565
-    },
-    {
-      "source": "Bacillota",
-      "target": "Bacilli",
-      "rel": 74745,
-      "value": 1.163
-    },
-    {
-      "source": "Bacilli",
-      "target": "Bacillales",
-      "rel": 69673,
-      "value": 1.084
-    },
-    {
-      "source": "Bacillati",
-      "target": "Actinomycetota",
-      "rel": 3068556,
-      "value": 47.76
-    },
-    {
-      "source": "Actinomycetota",
-      "target": "Acidimicrobiia",
-      "rel": 42282,
-      "value": 0.658
-    },
-    {
-      "source": "Acidimicrobiia",
-      "target": "Acidimicrobiales",
-      "rel": 41843,
-      "value": 0.651
-    },
-    {
-      "source": "Actinomycetota",
-      "target": "Thermoleophilia",
-      "rel": 162188,
-      "value": 2.524
-    },
-    {
-      "source": "Thermoleophilia",
-      "target": "Solirubrobacterales",
-      "rel": 148543,
-      "value": 2.312
-    },
-    {
-      "source": "Solirubrobacterales",
-      "target": "Conexibacteraceae",
-      "rel": 44474,
-      "value": 0.692
-    },
-    {
-      "source": "Conexibacteraceae",
-      "target": "Conexibacter",
-      "rel": 44479,
-      "value": 0.692
-    },
-    {
-      "source": "Solirubrobacterales",
-      "target": "Baekduiaceae",
-      "rel": 52688,
-      "value": 0.82
-    },
-    {
-      "source": "Baekduiaceae",
-      "target": "Baekduia",
-      "rel": 41189,
-      "value": 0.641
-    },
-    {
-      "source": "Actinomycetota",
-      "target": "Actinomycetes",
-      "rel": 2800933,
-      "value": 43.595
-    },
-    {
-      "source": "Actinomycetes",
-      "target": "Geodermatophilales",
-      "rel": 64293,
-      "value": 1.001
-    },
-    {
-      "source": "Geodermatophilales",
-      "target": "Geodermatophilaceae",
-      "rel": 64385,
-      "value": 1.002
-    },
-    {
-      "source": "Actinomycetes",
-      "target": "Streptosporangiales",
-      "rel": 124715,
-      "value": 1.941
-    },
-    {
-      "source": "Streptosporangiales",
-      "target": "Thermomonosporaceae",
-      "rel": 40451,
-      "value": 0.63
-    },
-    {
-      "source": "Streptosporangiales",
-      "target": "Streptosporangiaceae",
-      "rel": 69210,
-      "value": 1.077
-    },
-    {
-      "source": "Actinomycetes",
-      "target": "Pseudonocardiales",
-      "rel": 241381,
-      "value": 3.757
-    },
-    {
-      "source": "Pseudonocardiales",
-      "target": "Pseudonocardiaceae",
-      "rel": 241256,
-      "value": 3.755
-    },
-    {
-      "source": "Pseudonocardiaceae",
-      "target": "Pseudonocardia",
-      "rel": 71783,
-      "value": 1.117
-    },
-    {
-      "source": "Pseudonocardiaceae",
-      "target": "Amycolatopsis",
-      "rel": 72693,
-      "value": 1.131
-    },
-    {
-      "source": "Actinomycetes",
-      "target": "Micromonosporales",
-      "rel": 286342,
-      "value": 4.457
-    },
-    {
-      "source": "Micromonosporales",
-      "target": "Micromonosporaceae",
-      "rel": 286328,
-      "value": 4.457
-    },
-    {
-      "source": "Micromonosporaceae",
-      "target": "Dactylosporangium",
-      "rel": 44448,
-      "value": 0.692
-    },
-    {
-      "source": "Micromonosporaceae",
-      "target": "Actinoplanes",
-      "rel": 64281,
-      "value": 1.0
-    },
-    {
-      "source": "Micromonosporaceae",
-      "target": "Micromonospora",
-      "rel": 120523,
-      "value": 1.876
-    },
-    {
-      "source": "Actinomycetes",
-      "target": "Mycobacteriales",
-      "rel": 304494,
-      "value": 4.739
-    },
-    {
-      "source": "Mycobacteriales",
-      "target": "Nocardiaceae",
-      "rel": 85595,
-      "value": 1.332
-    },
-    {
-      "source": "Nocardiaceae",
-      "target": "Nocardia",
-      "rel": 49765,
-      "value": 0.775
-    },
-    {
-      "source": "Mycobacteriales",
-      "target": "Mycobacteriaceae",
-      "rel": 159215,
-      "value": 2.478
-    },
-    {
-      "source": "Mycobacteriaceae",
-      "target": "Mycobacterium",
-      "rel": 62626,
-      "value": 0.975
-    },
-    {
-      "source": "Mycobacteriaceae",
-      "target": "Mycolicibacterium",
-      "rel": 76591,
-      "value": 1.192
-    },
-    {
-      "source": "Actinomycetes",
-      "target": "Propionibacteriales",
-      "rel": 240356,
-      "value": 3.741
-    },
-    {
-      "source": "Propionibacteriales",
-      "target": "Kribbellaceae",
-      "rel": 33486,
-      "value": 0.521
-    },
-    {
-      "source": "Kribbellaceae",
-      "target": "Kribbella",
-      "rel": 33505,
-      "value": 0.521
-    },
-    {
-      "source": "Propionibacteriales",
-      "target": "Nocardioidaceae",
-      "rel": 177285,
-      "value": 2.759
-    },
-    {
-      "source": "Nocardioidaceae",
-      "target": "Nocardioides",
-      "rel": 151758,
-      "value": 2.362
-    },
-    {
-      "source": "Actinomycetes",
-      "target": "Micrococcales",
-      "rel": 417593,
-      "value": 6.5
-    },
-    {
-      "source": "Micrococcales",
-      "target": "Cellulomonadaceae",
-      "rel": 33953,
-      "value": 0.528
-    },
-    {
-      "source": "Micrococcales",
-      "target": "Micrococcaceae",
-      "rel": 77704,
-      "value": 1.209
-    },
-    {
-      "source": "Micrococcaceae",
-      "target": "Arthrobacter",
-      "rel": 38598,
-      "value": 0.601
-    },
-    {
-      "source": "Micrococcales",
-      "target": "Microbacteriaceae",
-      "rel": 189242,
-      "value": 2.945
-    },
-    {
-      "source": "Microbacteriaceae",
-      "target": "Microbacterium",
-      "rel": 70194,
-      "value": 1.093
-    },
-    {
-      "source": "Actinomycetes",
-      "target": "Kitasatosporales",
-      "rel": 778849,
-      "value": 12.122
-    },
-    {
-      "source": "Kitasatosporales",
-      "target": "Streptomycetaceae",
-      "rel": 777160,
-      "value": 12.096
-    },
-    {
-      "source": "Streptomycetaceae",
-      "target": "Kitasatospora",
-      "rel": 35875,
-      "value": 0.558
-    },
-    {
-      "source": "Streptomycetaceae",
-      "target": "Streptomyces",
-      "rel": 704918,
-      "value": 10.972
-    },
-    {
-      "source": "Pseudomonadati",
-      "target": "Acidobacteriota",
-      "rel": 50668,
-      "value": 0.789
-    },
-    {
-      "source": "Pseudomonadati",
-      "target": "Gemmatimonadota",
-      "rel": 34296,
-      "value": 0.534
-    },
-    {
-      "source": "Gemmatimonadota",
-      "target": "Gemmatimonadia",
-      "rel": 32379,
-      "value": 0.504
-    },
-    {
-      "source": "Pseudomonadati",
-      "target": "Bacteroidota",
-      "rel": 70409,
-      "value": 1.096
-    },
-    {
-      "source": "Pseudomonadati",
-      "target": "Planctomycetota",
-      "rel": 159624,
-      "value": 2.484
-    },
-    {
-      "source": "Planctomycetota",
-      "target": "Planctomycetia",
-      "rel": 150241,
-      "value": 2.338
-    },
-    {
-      "source": "Planctomycetia",
-      "target": "Isosphaerales",
-      "rel": 46489,
-      "value": 0.724
-    },
-    {
-      "source": "Isosphaerales",
-      "target": "Isosphaeraceae",
-      "rel": 46413,
-      "value": 0.722
-    },
-    {
-      "source": "Planctomycetia",
-      "target": "Gemmatales",
-      "rel": 45156,
-      "value": 0.703
-    },
-    {
-      "source": "Gemmatales",
-      "target": "Gemmataceae",
-      "rel": 45243,
-      "value": 0.704
-    },
-    {
-      "source": "Pseudomonadati",
-      "target": "Myxococcota",
-      "rel": 172068,
-      "value": 2.678
-    },
-    {
-      "source": "Myxococcota",
-      "target": "Myxococcia",
-      "rel": 76167,
-      "value": 1.185
-    },
-    {
-      "source": "Myxococcia",
-      "target": "Myxococcales",
-      "rel": 76275,
-      "value": 1.187
-    },
-    {
-      "source": "Myxococcota",
-      "target": "Polyangiales",
-      "rel": 81215,
-      "value": 1.264
-    },
-    {
-      "source": "Polyangiales",
-      "target": "Polyangiaceae",
-      "rel": 68911,
-      "value": 1.073
-    },
-    {
-      "source": "Polyangiaceae",
-      "target": "Sorangium",
-      "rel": 60384,
-      "value": 0.94
-    },
-    {
       "source": "Pseudomonadati",
       "target": "Pseudomonadota",
-      "rel": 2244643,
-      "value": 34.937
-    },
-    {
-      "source": "Pseudomonadota",
-      "target": "Gammaproteobacteria",
-      "rel": 368637,
-      "value": 5.738
-    },
-    {
-      "source": "Gammaproteobacteria",
-      "target": "Enterobacterales",
-      "rel": 38333,
-      "value": 0.597
-    },
-    {
-      "source": "Gammaproteobacteria",
-      "target": "Pseudomonadales",
-      "rel": 114992,
-      "value": 1.79
-    },
-    {
-      "source": "Pseudomonadales",
-      "target": "Pseudomonadaceae",
-      "rel": 111780,
-      "value": 1.74
-    },
-    {
-      "source": "Pseudomonadaceae",
-      "target": "Pseudomonas",
-      "rel": 91689,
-      "value": 1.427
-    },
-    {
-      "source": "Gammaproteobacteria",
-      "target": "Lysobacterales",
-      "rel": 103084,
-      "value": 1.604
-    },
-    {
-      "source": "Lysobacterales",
-      "target": "Lysobacteraceae",
-      "rel": 77918,
-      "value": 1.213
-    },
-    {
-      "source": "Pseudomonadota",
-      "target": "Betaproteobacteria",
-      "rel": 476523,
-      "value": 7.417
-    },
-    {
-      "source": "Betaproteobacteria",
-      "target": "Burkholderiales",
-      "rel": 403845,
-      "value": 6.286
-    },
-    {
-      "source": "Burkholderiales",
-      "target": "Alcaligenaceae",
-      "rel": 33684,
-      "value": 0.524
-    },
-    {
-      "source": "Burkholderiales",
-      "target": "Sphaerotilaceae",
-      "rel": 41344,
-      "value": 0.643
-    },
-    {
-      "source": "Burkholderiales",
-      "target": "Oxalobacteraceae",
-      "rel": 51105,
-      "value": 0.795
-    },
-    {
-      "source": "Burkholderiales",
-      "target": "Comamonadaceae",
-      "rel": 110030,
-      "value": 1.713
-    },
-    {
-      "source": "Comamonadaceae",
-      "target": "Variovorax",
-      "rel": 40583,
-      "value": 0.632
-    },
-    {
-      "source": "Burkholderiales",
-      "target": "Burkholderiaceae",
-      "rel": 135217,
-      "value": 2.105
-    },
-    {
-      "source": "Burkholderiaceae",
-      "target": "Burkholderia",
-      "rel": 45753,
-      "value": 0.712
+      "rel": 6323886,
+      "value": 38.128624930022404
     },
     {
       "source": "Pseudomonadota",
       "target": "Alphaproteobacteria",
-      "rel": 1293158,
-      "value": 20.127
-    },
-    {
-      "source": "Alphaproteobacteria",
-      "target": "Acetobacterales",
-      "rel": 55940,
-      "value": 0.871
-    },
-    {
-      "source": "Acetobacterales",
-      "target": "Roseomonadaceae",
-      "rel": 34406,
-      "value": 0.536
-    },
-    {
-      "source": "Alphaproteobacteria",
-      "target": "Caulobacterales",
-      "rel": 44092,
-      "value": 0.686
-    },
-    {
-      "source": "Caulobacterales",
-      "target": "Caulobacteraceae",
-      "rel": 44033,
-      "value": 0.685
-    },
-    {
-      "source": "Alphaproteobacteria",
-      "target": "Rhodospirillales",
-      "rel": 63018,
-      "value": 0.981
-    },
-    {
-      "source": "Rhodospirillales",
-      "target": "Azospirillaceae",
-      "rel": 33033,
-      "value": 0.514
-    },
-    {
-      "source": "Alphaproteobacteria",
-      "target": "Rhodobacterales",
-      "rel": 81652,
-      "value": 1.271
-    },
-    {
-      "source": "Rhodobacterales",
-      "target": "Roseobacteraceae",
-      "rel": 32905,
-      "value": 0.512
-    },
-    {
-      "source": "Rhodobacterales",
-      "target": "Paracoccaceae",
-      "rel": 42492,
-      "value": 0.661
-    },
-    {
-      "source": "Alphaproteobacteria",
-      "target": "Sphingomonadales",
-      "rel": 190097,
-      "value": 2.959
-    },
-    {
-      "source": "Sphingomonadales",
-      "target": "Sphingomonadaceae",
-      "rel": 107087,
-      "value": 1.667
-    },
-    {
-      "source": "Sphingomonadaceae",
-      "target": "Sphingomonas",
-      "rel": 86439,
-      "value": 1.345
+      "rel": 3478459,
+      "value": 20.972683338292438
     },
     {
       "source": "Alphaproteobacteria",
       "target": "Hyphomicrobiales",
-      "rel": 783899,
-      "value": 12.201
-    },
-    {
-      "source": "Hyphomicrobiales",
-      "target": "Phyllobacteriaceae",
-      "rel": 74044,
-      "value": 1.152
-    },
-    {
-      "source": "Phyllobacteriaceae",
-      "target": "Mesorhizobium",
-      "rel": 58440,
-      "value": 0.91
-    },
-    {
-      "source": "Hyphomicrobiales",
-      "target": "Rhizobiaceae",
-      "rel": 85897,
-      "value": 1.337
-    },
-    {
-      "source": "Rhizobiaceae",
-      "target": "Rhizobium",
-      "rel": 33528,
-      "value": 0.522
-    },
-    {
-      "source": "Hyphomicrobiales",
-      "target": "Methylobacteriaceae",
-      "rel": 102182,
-      "value": 1.59
-    },
-    {
-      "source": "Methylobacteriaceae",
-      "target": "Methylobacterium",
-      "rel": 42635,
-      "value": 0.664
-    },
-    {
-      "source": "Methylobacteriaceae",
-      "target": "Microvirga",
-      "rel": 50761,
-      "value": 0.79
+      "rel": 2122436,
+      "value": 12.796809775188391
     },
     {
       "source": "Hyphomicrobiales",
       "target": "Nitrobacteraceae",
-      "rel": 285522,
-      "value": 4.444
+      "rel": 669519,
+      "value": 4.0367329256921565
     },
     {
       "source": "Nitrobacteraceae",
       "target": "Bradyrhizobium",
-      "rel": 231369,
-      "value": 3.601
+      "rel": 536470,
+      "value": 3.234540188771448
+    },
+    {
+      "source": "Hyphomicrobiales",
+      "target": "Rhizobiaceae",
+      "rel": 315626,
+      "value": 1.9030047935973626
+    },
+    {
+      "source": "Rhizobiaceae",
+      "target": "Rhizobium",
+      "rel": 103550,
+      "value": 0.6243343272639355
+    },
+    {
+      "source": "Hyphomicrobiales",
+      "target": "Phyllobacteriaceae",
+      "rel": 221324,
+      "value": 1.334429460621567
+    },
+    {
+      "source": "Phyllobacteriaceae",
+      "target": "Mesorhizobium",
+      "rel": 170315,
+      "value": 1.0268807430995381
+    },
+    {
+      "source": "Hyphomicrobiales",
+      "target": "Methylobacteriaceae",
+      "rel": 158724,
+      "value": 0.95699509184588
+    },
+    {
+      "source": "Methylobacteriaceae",
+      "target": "Methylobacterium",
+      "rel": 90953,
+      "value": 0.548383197176598
+    },
+    {
+      "source": "Alphaproteobacteria",
+      "target": "Sphingomonadales",
+      "rel": 412759,
+      "value": 2.4886490834102823
+    },
+    {
+      "source": "Sphingomonadales",
+      "target": "Sphingomonadaceae",
+      "rel": 212603,
+      "value": 1.281847909022641
+    },
+    {
+      "source": "Sphingomonadaceae",
+      "target": "Sphingomonas",
+      "rel": 164743,
+      "value": 0.9932854666966926
+    },
+    {
+      "source": "Alphaproteobacteria",
+      "target": "Rhodobacterales",
+      "rel": 285552,
+      "value": 1.7216795347066278
+    },
+    {
+      "source": "Rhodobacterales",
+      "target": "Paracoccaceae",
+      "rel": 147528,
+      "value": 0.8894910152833788
+    },
+    {
+      "source": "Rhodobacterales",
+      "target": "Roseobacteraceae",
+      "rel": 113805,
+      "value": 0.6861648296887705
+    },
+    {
+      "source": "Alphaproteobacteria",
+      "target": "Rhodospirillales",
+      "rel": 202297,
+      "value": 1.2197099121440111
+    },
+    {
+      "source": "Rhodospirillales",
+      "target": "Azospirillaceae",
+      "rel": 93539,
+      "value": 0.5639749747749034
+    },
+    {
+      "source": "Alphaproteobacteria",
+      "target": "Acetobacterales",
+      "rel": 109099,
+      "value": 0.6577909296974225
+    },
+    {
+      "source": "Alphaproteobacteria",
+      "target": "Caulobacterales",
+      "rel": 104372,
+      "value": 0.6292904143427471
+    },
+    {
+      "source": "Caulobacterales",
+      "target": "Caulobacteraceae",
+      "rel": 104372,
+      "value": 0.6292904143427471
+    },
+    {
+      "source": "Pseudomonadota",
+      "target": "Betaproteobacteria",
+      "rel": 1344182,
+      "value": 8.104480586096487
+    },
+    {
+      "source": "Betaproteobacteria",
+      "target": "Burkholderiales",
+      "rel": 1109867,
+      "value": 6.691724449999442
+    },
+    {
+      "source": "Burkholderiales",
+      "target": "Burkholderiaceae",
+      "rel": 393900,
+      "value": 2.374942457839345
+    },
+    {
+      "source": "Burkholderiaceae",
+      "target": "Burkholderia",
+      "rel": 131410,
+      "value": 0.7923107092781628
+    },
+    {
+      "source": "Burkholderiaceae",
+      "target": "Cupriavidus",
+      "rel": 83944,
+      "value": 0.5061238123403554
+    },
+    {
+      "source": "Burkholderiales",
+      "target": "Comamonadaceae",
+      "rel": 275766,
+      "value": 1.6626767753961027
+    },
+    {
+      "source": "Comamonadaceae",
+      "target": "Variovorax",
+      "rel": 100356,
+      "value": 0.6050767334321536
+    },
+    {
+      "source": "Burkholderiales",
+      "target": "Oxalobacteraceae",
+      "rel": 135535,
+      "value": 0.8171815842174553
+    },
+    {
+      "source": "Burkholderiales",
+      "target": "Sphaerotilaceae",
+      "rel": 112980,
+      "value": 0.6811906547009119
+    },
+    {
+      "source": "Burkholderiales",
+      "target": "Alcaligenaceae",
+      "rel": 98480,
+      "value": 0.5937657609749142
+    },
+    {
+      "source": "Betaproteobacteria",
+      "target": "Rhodocyclales",
+      "rel": 86826,
+      "value": 0.5235002636312743
+    },
+    {
+      "source": "Pseudomonadota",
+      "target": "Gammaproteobacteria",
+      "rel": 1163723,
+      "value": 7.0164385932068445
+    },
+    {
+      "source": "Gammaproteobacteria",
+      "target": "Pseudomonadales",
+      "rel": 355377,
+      "value": 2.1426756177699238
+    },
+    {
+      "source": "Pseudomonadales",
+      "target": "Pseudomonadaceae",
+      "rel": 343505,
+      "value": 2.071095732368886
+    },
+    {
+      "source": "Pseudomonadaceae",
+      "target": "Pseudomonas",
+      "rel": 278051,
+      "value": 1.6764537327867166
+    },
+    {
+      "source": "Gammaproteobacteria",
+      "target": "Lysobacterales",
+      "rel": 293565,
+      "value": 1.7699923397705188
+    },
+    {
+      "source": "Lysobacterales",
+      "target": "Lysobacteraceae",
+      "rel": 218747,
+      "value": 1.3188919467504017
+    },
+    {
+      "source": "Gammaproteobacteria",
+      "target": "Enterobacterales",
+      "rel": 121594,
+      "value": 0.7331270708771701
+    },
+    {
+      "source": "Gammaproteobacteria",
+      "target": "Oceanospirillales",
+      "rel": 83971,
+      "value": 0.5062866035217762
+    },
+    {
+      "source": "Pseudomonadati",
+      "target": "Planctomycetota",
+      "rel": 539315,
+      "value": 3.2516935558507902
+    },
+    {
+      "source": "Planctomycetota",
+      "target": "Planctomycetia",
+      "rel": 514145,
+      "value": 3.0999359989484896
+    },
+    {
+      "source": "Planctomycetia",
+      "target": "Gemmatales",
+      "rel": 148057,
+      "value": 0.8926805165786238
+    },
+    {
+      "source": "Gemmatales",
+      "target": "Gemmataceae",
+      "rel": 148057,
+      "value": 0.8926805165786238
+    },
+    {
+      "source": "Planctomycetia",
+      "target": "Pirellulales",
+      "rel": 127415,
+      "value": 0.7682236437308966
+    },
+    {
+      "source": "Planctomycetia",
+      "target": "Isosphaerales",
+      "rel": 102569,
+      "value": 0.6184195810056455
+    },
+    {
+      "source": "Isosphaerales",
+      "target": "Isosphaeraceae",
+      "rel": 102569,
+      "value": 0.6184195810056455
+    },
+    {
+      "source": "Planctomycetia",
+      "target": "Planctomycetales",
+      "rel": 90456,
+      "value": 0.5453866335778517
+    },
+    {
+      "source": "Planctomycetales",
+      "target": "Planctomycetaceae",
+      "rel": 90456,
+      "value": 0.5453866335778517
+    },
+    {
+      "source": "Pseudomonadati",
+      "target": "Myxococcota",
+      "rel": 532053,
+      "value": 3.2079087573516047
+    },
+    {
+      "source": "Myxococcota",
+      "target": "Polyangiales",
+      "rel": 250479,
+      "value": 1.5102137900409782
+    },
+    {
+      "source": "Polyangiales",
+      "target": "Polyangiaceae",
+      "rel": 213414,
+      "value": 1.2867376737682812
+    },
+    {
+      "source": "Polyangiaceae",
+      "target": "Sorangium",
+      "rel": 187791,
+      "value": 1.1322488425999198
+    },
+    {
+      "source": "Myxococcota",
+      "target": "Myxococcia",
+      "rel": 234870,
+      "value": 1.4161023992706956
+    },
+    {
+      "source": "Myxococcia",
+      "target": "Myxococcales",
+      "rel": 234870,
+      "value": 1.4161023992706956
+    },
+    {
+      "source": "Pseudomonadati",
+      "target": "Bacteroidota",
+      "rel": 164017,
+      "value": 0.9889081927073771
+    },
+    {
+      "source": "Pseudomonadati",
+      "target": "Acidobacteriota",
+      "rel": 168248,
+      "value": 1.0144181737663218
+    },
+    {
+      "source": "Pseudomonadati",
+      "target": "Thermodesulfobacteriota",
+      "rel": 108411,
+      "value": 0.6536427692226993
+    },
+    {
+      "source": "Bacillati",
+      "target": "Actinomycetota",
+      "rel": 6742405,
+      "value": 40.652002798802464
+    },
+    {
+      "source": "Actinomycetota",
+      "target": "Actinomycetes",
+      "rel": 6206501,
+      "value": 37.42087519553783
+    },
+    {
+      "source": "Actinomycetes",
+      "target": "Kitasatosporales",
+      "rel": 1962324,
+      "value": 11.83144601075688
+    },
+    {
+      "source": "Kitasatosporales",
+      "target": "Streptomycetaceae",
+      "rel": 1958243,
+      "value": 11.806840425150272
+    },
+    {
+      "source": "Streptomycetaceae",
+      "target": "Streptomyces",
+      "rel": 1786077,
+      "value": 10.768799442168884
+    },
+    {
+      "source": "Streptomycetaceae",
+      "target": "Kitasatospora",
+      "rel": 88205,
+      "value": 0.5318146724897675
+    },
+    {
+      "source": "Actinomycetes",
+      "target": "Micrococcales",
+      "rel": 981182,
+      "value": 5.915843591438751
+    },
+    {
+      "source": "Micrococcales",
+      "target": "Microbacteriaceae",
+      "rel": 481479,
+      "value": 2.902982786641356
+    },
+    {
+      "source": "Microbacteriaceae",
+      "target": "Microbacterium",
+      "rel": 172535,
+      "value": 1.040265795794139
+    },
+    {
+      "source": "Micrococcales",
+      "target": "Micrococcaceae",
+      "rel": 137398,
+      "value": 0.828414175735492
+    },
+    {
+      "source": "Actinomycetes",
+      "target": "Mycobacteriales",
+      "rel": 699138,
+      "value": 4.2153148517108
+    },
+    {
+      "source": "Mycobacteriales",
+      "target": "Mycobacteriaceae",
+      "rel": 318604,
+      "value": 1.920960057977778
+    },
+    {
+      "source": "Mycobacteriaceae",
+      "target": "Mycolicibacterium",
+      "rel": 151519,
+      "value": 0.9135539636185827
+    },
+    {
+      "source": "Mycobacteriaceae",
+      "target": "Mycobacterium",
+      "rel": 122688,
+      "value": 0.7397231283762213
+    },
+    {
+      "source": "Mycobacteriales",
+      "target": "Nocardiaceae",
+      "rel": 227081,
+      "value": 1.3691401580822957
+    },
+    {
+      "source": "Nocardiaceae",
+      "target": "Nocardia",
+      "rel": 134555,
+      "value": 0.8112728672621808
+    },
+    {
+      "source": "Actinomycetes",
+      "target": "Micromonosporales",
+      "rel": 553652,
+      "value": 3.3381356731852474
+    },
+    {
+      "source": "Micromonosporales",
+      "target": "Micromonosporaceae",
+      "rel": 553652,
+      "value": 3.3381356731852474
+    },
+    {
+      "source": "Micromonosporaceae",
+      "target": "Micromonospora",
+      "rel": 257069,
+      "value": 1.5499468969136903
+    },
+    {
+      "source": "Micromonosporaceae",
+      "target": "Dactylosporangium",
+      "rel": 90421,
+      "value": 0.5451756079723061
+    },
+    {
+      "source": "Micromonosporaceae",
+      "target": "Actinoplanes",
+      "rel": 90027,
+      "value": 0.5428000625841654
+    },
+    {
+      "source": "Actinomycetes",
+      "target": "Pseudonocardiales",
+      "rel": 457689,
+      "value": 2.7595456679005634
+    },
+    {
+      "source": "Pseudonocardiales",
+      "target": "Pseudonocardiaceae",
+      "rel": 457689,
+      "value": 2.7595456679005634
+    },
+    {
+      "source": "Pseudonocardiaceae",
+      "target": "Amycolatopsis",
+      "rel": 154903,
+      "value": 0.933957125023326
+    },
+    {
+      "source": "Pseudonocardiaceae",
+      "target": "Pseudonocardia",
+      "rel": 85601,
+      "value": 0.5161143674371814
+    },
+    {
+      "source": "Actinomycetes",
+      "target": "Propionibacteriales",
+      "rel": 426067,
+      "value": 2.5688870479417014
+    },
+    {
+      "source": "Propionibacteriales",
+      "target": "Nocardioidaceae",
+      "rel": 292725,
+      "value": 1.7649277252374265
+    },
+    {
+      "source": "Nocardioidaceae",
+      "target": "Nocardioides",
+      "rel": 237163,
+      "value": 1.4299275910854343
+    },
+    {
+      "source": "Actinomycetes",
+      "target": "Streptosporangiales",
+      "rel": 284365,
+      "value": 1.714522752027127
+    },
+    {
+      "source": "Streptosporangiales",
+      "target": "Streptosporangiaceae",
+      "rel": 160677,
+      "value": 0.9687703206353198
+    },
+    {
+      "source": "Streptosporangiales",
+      "target": "Thermomonosporaceae",
+      "rel": 86730,
+      "value": 0.5229214505417781
+    },
+    {
+      "source": "Actinomycetota",
+      "target": "Thermoleophilia",
+      "rel": 268335,
+      "value": 1.6178730246872826
+    },
+    {
+      "source": "Thermoleophilia",
+      "target": "Solirubrobacterales",
+      "rel": 227802,
+      "value": 1.3734872855565332
+    },
+    {
+      "source": "Actinomycetota",
+      "target": "Acidimicrobiia",
+      "rel": 126130,
+      "value": 0.7604759893558685
+    },
+    {
+      "source": "Acidimicrobiia",
+      "target": "Acidimicrobiales",
+      "rel": 123744,
+      "value": 0.7460900723606801
+    },
+    {
+      "source": "Bacillati",
+      "target": "Bacillota",
+      "rel": 324088,
+      "value": 1.9540247557152515
+    },
+    {
+      "source": "Bacillota",
+      "target": "Bacilli",
+      "rel": 224960,
+      "value": 1.3563520063862378
+    },
+    {
+      "source": "Bacilli",
+      "target": "Bacillales",
+      "rel": 207656,
+      "value": 1.252020947004537
+    },
+    {
+      "source": "Bacillales",
+      "target": "Bacillaceae",
+      "rel": 88537,
+      "value": 0.5338164010909421
+    },
+    {
+      "source": "Bacillales",
+      "target": "Paenibacillaceae",
+      "rel": 82695,
+      "value": 0.49859321287388836
+    },
+    {
+      "source": "Bacillati",
+      "target": "Cyanobacteriota",
+      "rel": 88220,
+      "value": 0.5319051120350013
+    },
+    {
+      "source": "Cyanobacteriota",
+      "target": "Cyanophyceae",
+      "rel": 88100,
+      "value": 0.531181595673131
     },
     {
       "source": "Viridiplantae",
       "target": "Streptophyta",
-      "rel": 176142,
-      "value": 2.742
+      "rel": 561855,
+      "value": 3.3875940458221003
     },
     {
       "source": "Streptophyta",
       "target": "Magnoliopsida",
-      "rel": 169071,
-      "value": 2.631
+      "rel": 538231,
+      "value": 3.2451577913818954
     },
     {
       "source": "Magnoliopsida",
       "target": "Poales",
-      "rel": 67195,
-      "value": 1.046
+      "rel": 206295,
+      "value": 1.2438150656003242
     },
     {
       "source": "Poales",
       "target": "Poaceae",
-      "rel": 65643,
-      "value": 1.022
+      "rel": 200891,
+      "value": 1.211232712104097
     },
     {
       "source": "Methanobacteriati",
       "target": "Methanobacteriota",
-      "rel": 62614,
-      "value": 0.975
+      "rel": 184381,
+      "value": 1.1116889193167714
     },
     {
       "source": "Methanobacteriota",
       "target": "Halobacteria",
-      "rel": 59078,
-      "value": 0.92
+      "rel": 170519,
+      "value": 1.0281107209147176
     },
     {
       "source": "Halobacteria",
       "target": "Halobacteriales",
-      "rel": 58987,
-      "value": 0.918
+      "rel": 170519,
+      "value": 1.0281107209147176
     }
   ]
 }
@@ -2561,7 +2471,7 @@
     filteredData = filterByDepth(data=data, maxDepth=currentDepth)
 
     
-    const HIGHLIGHT_COLOR = "#DD85E7"
+    const HIGHLIGHT_COLOR = "#FF637E"
     const styledNodes = filteredData.nodes.map(n => {
       if (highlightNodes.has(n.name)) {
         return {
