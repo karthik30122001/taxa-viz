@@ -1,6 +1,6 @@
 [project]
 name = "taxa-viz"
-version = "0.2.0"
+version = "0.2.1"
 description = ""
 authors = [
     {name = "karthik30122001",email = "karthikeyan.vpani@gmail.com"}
