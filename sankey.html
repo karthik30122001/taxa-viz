@@ -28,34 +28,51 @@
       border-radius: 0.25rem;
       padding: 0.5em 1em;
       font-size: 14px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    button:hover, select:hover {
+      background: #ffffff;
     }
     .buttons {
       display: flex;
       column-gap : 0.5rem;
       justify-content: center;
     }
+    .title-bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 85%;
+      padding: 1.5em 1em 0em 1em;
+    }
     .title-text {
-      font-size: 24px;
+      font-size: 28px;
+      font-weight: bold;
+      padding: 0;
+      margin: 0;
       
     }
   </style>
 </head>
 <body>
-<p class="title-text">Taxonomy Sankey</p>
+  <div class="title-bar">
+    <p class="title-text">Taxonomy Sankey</p>
 
-<div class="buttons">
-  <button onClick="set1reads()" >5% reads</button>
-  <button onClick="set05reads()" >1% reads</button>
-  <button onClick="set01reads()" >0.5% reads</button>
+    <div class="buttons">
+      <button id="but1" onClick="set1reads()" >5% reads</button>
+      <button id="but2" onClick="set05reads()" >1% reads</button>
+      <button id="but3" onClick="set01reads()" >0.5% reads</button>
 
-  <select id="depthSelect" onchange="onDepthChange()">
-    <option value="2" selected>Up to Class</option>
-    <option value="3">Up to Order</option>
-    <option value="4">Up to Family</option>
-    <option value="5">Up to Genus</option>
-    <option value="6">Up to Species</option>
-  </select>
-</div>
+      <select id="depthSelect" onchange="onDepthChange()">
+        <option value="2" selected>Up to Class</option>
+        <option value="3">Up to Order</option>
+        <option value="4">Up to Family</option>
+        <option value="5">Up to Genus</option>
+        <option value="6">Up to Species</option>
+      </select>
+    </div>
+  </div>
 <div id="chart"></div>
 
 <script id="data_1" type="application/json">
@@ -2519,15 +2536,16 @@
           label: {
             show: true,
             silent: true,   // keeps tooltip hover working
-            fontSize: 16,
+            fontSize: 17,
+            textBorderColor: 'transparent',
             lineHeight: 15,
             formatter: function (params) {
               const reads =
                 typeof params.value === 'number'
-                  ? params.value.toLocaleString()
+                  ? params.value.toPrecision(3)
                   : 'NA';
 
-              return `${params.name}\n${reads}`;
+              return `${params.name}\n${reads} %`;
             }
           },
           type: 'sankey',
@@ -2605,15 +2623,33 @@
   function set1reads() {
     currentData = data_1
     rerenderChart(data_1)
+    document.getElementById('but1').style.backgroundColor = '';
+    document.getElementById('but2').style.backgroundColor = '';
+    document.getElementById('but3').style.backgroundColor = '';
+    
+    // Highlight active button
+    document.getElementById('but1').style.backgroundColor = '#d3d3d3';
   }
   function set05reads() {
     currentData = data_0_5
     rerenderChart(data_0_5)
+    document.getElementById('but1').style.backgroundColor = '';
+    document.getElementById('but2').style.backgroundColor = '';
+    document.getElementById('but3').style.backgroundColor = '';
+    
+    // Highlight active button
+    document.getElementById('but2').style.backgroundColor = '#d3d3d3';
     console.log("0.5")
   }
   function set01reads() {
     currentData = data_0_1
     rerenderChart(data_0_1)
+    document.getElementById('but1').style.backgroundColor = '';
+    document.getElementById('but2').style.backgroundColor = '';
+    document.getElementById('but3').style.backgroundColor = '';
+    
+    // Highlight active button
+    document.getElementById('but3').style.backgroundColor = '#d3d3d3';
     console.log("0.1")
   }
   
@@ -2624,6 +2660,3 @@
     rerenderChart(currentData);
   }
 </script>
-
-</body>
-</html>
